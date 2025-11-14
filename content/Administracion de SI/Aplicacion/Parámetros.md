@@ -1,0 +1,7 @@
+Cualitativos y cuantitativos
+
+Los **parámetros cuantitativos** surgen de mediciones y/o proyecciones de cantidades y capacidades de los distintos componentes enumerados en la lista. Se refieren generalmente a rangos de valores que limitarán las capacidades del dispositivo, y que de su cumplimiento surgirá el equipamiento que mejor se adapte a la organización. Dicho de otro modo, los parámetros cuantitativos son medidas, o proyecciones de éstas, de alguna capacidad o cantidad que determina una característica o subcaracterística de un elemento de HW o de una facilidad de SW. Su determinación se basa en el empleo de fórmulas matemáticas determinísticas o métodos probabilísticos, que arrojan una apreciación altamente objetiva sobre una característica.
+_Ej.: tps, tasa de transferencia, capacidad de almacenamiento._
+
+Los **parámetros cualitativos** son similares a los anteriormente nombrados, con el agregado de que su cumplimiento no solo permitirá definir al mejor equipo que se adapte a la organización, sino también aquel que posea la mejor performance aplicada a las capacidades manejadas por la misma. Es decir, los parámetros cualitativos son determinados por la experiencia, la observación, convenciones, restricciones, políticas, etc. Poseen cierta subjetividad y por lo general se deben transformar en cuantitativas, o controlar que no superen el 20% del total de parámetros. 
+_Ej.: tecnología de disco, dimensiones de pantalla, variables de consumo de electricidad (como frecuencia y voltaje), estética, etc_
