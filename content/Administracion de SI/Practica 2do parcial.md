@@ -32,3 +32,28 @@ Comportamiento
 
 Metodo de prediccion
 - Regresion lineal
+
+
+# Andreani
+
+tiempo de guarda
+
+criterios
+especificidad: querian un sw con funcionalidad especificas para la industria farmaceutica, cualitativa
+mantenimiento: querian soporte local, cualitativa
+costo: 1,89millones, cualitativo
+modificabilidad: hay mucha variacion entre los procesos que se realizan en cada laboratorio, cualitativa
+disponibilidad: necesitan ver enseguida donde esta un producto, cualitativo
+req de hw: hw, sw de base y dispositivos RF, cuantitativo
+
+esquema
+paquetes estandar SCE de Infor
+desarrollo a medida por fabricante Message Broker solucion de IBM
+
+upn
+SCE
+clientes
+pedidos
+
+comportamiento: tendencia
+prediccion: progresion lineal
