@@ -3,8 +3,17 @@ There is a setuid binary in the homedirectory that does the following: it makes 
 **NOTE:** Try connecting to your own network daemon to see if it works as you think
 ## Comandos
 ```
+#Tenes 2 terminales y entras a bandit20 con las dos
 
+#Terminal A
+nc -l -p 4444
+
+#Terminal B
+./suconnect 4444
+
+#Terminal A de vuelta
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO #que es la contrasenia del nivel anterior
 ```
-
+- nc
 ## Contraseña    
-- 
+- EeoULMCra2q0dSkYj561DX7s1CpBuOBt
