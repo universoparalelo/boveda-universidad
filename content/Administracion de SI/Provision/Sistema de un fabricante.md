@@ -1,0 +1,3 @@
+Hay tres tipos a su vez: modificado por el fabricante, por otra persona contratada o por personal interno. Pero el motivo de eleccion es el mismo.
+- Si la empresa quiere algo muy especifico, con caracteristicas que no ofrecen paquetes estandares o que permitan una modificacion alta.
+- Tambien hay que tener en cuenta que son sistemas que se desarrollan, hay una etapa de captura de requerimiento, analisis, desarrollo, etc.

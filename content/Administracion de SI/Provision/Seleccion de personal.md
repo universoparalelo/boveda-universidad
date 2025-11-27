@@ -1,0 +1,1 @@
+El objetivo básico d e la selección es escoger y clasificar los candidatos mas adecuados a las necesidades de la organizacion. Buscan que la persona sea adecuada y eficiente.

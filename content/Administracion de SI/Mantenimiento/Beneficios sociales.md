@@ -1,0 +1,1 @@
+Los beneficios sociales son aquellas facilidades, comodidades, ventajas y servicios que las empresas ofrecen a sus empleados para ahorrarles esfuerzos y preocupaciones. La empresa puede financiarlos, parcial o totalmente. Estos beneficios constituyen medios indispensables para el mantenimiento de la fuerza laboral dentro de un nivel satisfactorio de moral y productividad.

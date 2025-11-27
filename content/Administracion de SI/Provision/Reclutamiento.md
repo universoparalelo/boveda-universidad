@@ -1,0 +1,1 @@
+Es un conjunto de tecnicas y procedimientos orientados a atraer candidatos potencialmente calificados y capaces de ocupar cargos dentro de la organizacion.

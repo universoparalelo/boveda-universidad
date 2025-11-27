@@ -1,0 +1,1 @@
+Sistema de incentivos y recompensas que la organizacion establece para remunerar y recompenzar a las personas que trabajan en ella.

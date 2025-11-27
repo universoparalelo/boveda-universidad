@@ -1,0 +1,1 @@
+Higiene y seguridad en el trabajo constituyen dos actividades estrechamente relacionadas, orientadas a garantizar condiciones personales y materiales de trabajo capaces de mantener cierto nivel de salud de los empleados.

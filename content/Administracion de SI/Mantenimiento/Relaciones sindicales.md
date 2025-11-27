@@ -1,0 +1,1 @@
+Las relaciones de la propia organizacion con las entidades que representan a sus empleados: los sindicatos. Tienen que ver con el trabajo del personal y son negociaciones acordadas con los sindicatos.
