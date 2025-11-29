@@ -40,7 +40,7 @@
 ### Abdomen
 - Recto abdominal
 - Oblicuos externos e internos
-- transversal
+- Transverso del abdomen
 - Cuadrado lumbar
 
 ### Cadera/Gluteo
@@ -54,6 +54,7 @@
 - Vasto lateral
 - Vasto medio
 - Vasto intermedio
+- Sartorio
 
 ### Isquiotibiales
 - Biceps femoral
@@ -71,4 +72,4 @@
 - Tibial anterior
 - Flexores y extensores del pie
 
-- Sartorio
+
