@@ -48,6 +48,7 @@
 - Tensor de la fascia lata
 - Psoas iliaco
 - Piriforme (piramidal)
+![[Pasted image 20251127172045.png]]
 
 ### Cuadriceps
 - Recto femoral
@@ -55,6 +56,7 @@
 - Vasto medio
 - Vasto intermedio
 - Sartorio
+![[Pasted image 20251127172112.png]]
 
 ### Isquiotibiales
 - Biceps femoral
@@ -71,5 +73,7 @@
 - Soleo
 - Tibial anterior
 - Flexores y extensores del pie
+![[Pasted image 20251127172310.png]]
+![[Pasted image 20251127172334.png]]
 
 
