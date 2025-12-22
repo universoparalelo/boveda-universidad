@@ -3,5 +3,40 @@ tags:
   - musica
 ---
 ## Rock argentino
-- [[Seru Giran]]
-- [[Almendra]]
+- Decada de los 60s
+	- [[Almendra]]
+	- [[Los abuelos de la nada]]
+	- [[Pappo]] - Solista
+	- [[Luis Alberto Spinetta]] - Solista
+	- [[Charly Garcia]] - Solista
+- Decada de los 70s
+	- [[Seru Giran]]
+	- [[Los Enanitos Verdes]]
+	- [[Los Fabulosos Cadillacs]]
+	- [[Patricio Rey y sus Redonditos de Ricota]]
+- Decada de los 80s
+	- [[Gustavo Ceratti]] - Solista
+	- [[Virus]]
+	- [[Sumo]]
+	- [[Soda Estereo]]
+	- [[La Renga]]
+	- [[El cuarteto de Nos]] - Uruguay
+	- [[Divididos]]
+	- [[Los piojos]]
+	- [[Los Auténticos Decadentes]]
+- Decada de los 90s
+	- [[Babasonicos]]
+	- [[Callejeros]]
+	- [[Airbag]]
+	- [[Viejas Locas]]
+	- [[No te va a gustar]] - Uruguay
+	- [[La Vela Puerca]] - Uruguay
+- Decada de los 2000
+	- [[Intoxicados]]
+	- [[Tan Bionica]]
+	- [[Indio Solari y los Fundamentalistas del Aire Acondicionado]]
+	- [[Ciro y los persas]]
+- Decada del 2010
+	- [[El Zar]]
+	- [[NAFTA]]
+	- [[Conociendo Rusia]]
