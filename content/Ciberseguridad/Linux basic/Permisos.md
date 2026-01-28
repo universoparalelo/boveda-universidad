@@ -126,3 +126,33 @@ chattr +i -V prueba
 ```
 - Cambiar los atributos especiales y mostrar `-V` toda la informacion obtenida del proceso 
 - [Todos los atributos posibles](https://man7.org/linux/man-pages/man1/chattr.1.html)
+
+## SUID Y SGID
+> **Función:** Cuando se ejecuta un archivo con SUID, el proceso hereda los permisos del propietario del archivo, no del usuario que lo ejecuta.
+
+```
+which python3.9 | xargs ls -l
+```
+- A la salida de which se le aplica el ls -l, una forma de ejecutar comandos en serie
+
+- Para aplicar SUID
+```
+chmod 4755 /usr/bin/python3.9
+chmod u+s /usr/bin/python3.9
+```
+
+- Para hallar todos los ejecutables con SUID 
+```
+find / -type f -perm -4000 2>/dev/null
+```
+
+- Para hallar todos los ejecutable con SGID
+```
+find / -type f -perm -2000 2>/dev/null
+```
+
+- Dentro de python se puede ejecutar
+```
+os.setuid(0)
+os.system("whoami")
+```
