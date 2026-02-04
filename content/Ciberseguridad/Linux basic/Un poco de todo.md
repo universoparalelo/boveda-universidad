@@ -49,7 +49,6 @@ diff password.old password.new
 - `c` ha cambiado
 
 ## Abrir un puerto
-
 ```
 nc -nlvp 4646
 ```
@@ -58,3 +57,28 @@ nc -nlvp 4646
 ```
 watch -n 1 ls -l
 ```
+
+## Escuchar en un puerto
+```
+nc localhost 30002
+```
+
+## Bucles
+```
+for i in {00..10}; do echo $i; done
+```
+
+## Carpeta temporal
+- Si no tienes permiso de escritura puedes crear una carpeta temporal y dentro guardar archivos, pero luego se borraran
+```
+dir_temp=$(mktemp -d)
+cd $dir_temp
+touch archivo_tmp.txt
+```
+
+## /etc/passwd
+- Nos sirve para ver que bash ocupa cada usuario
+```
+cat /etc/passwd | grep username
+```
+
