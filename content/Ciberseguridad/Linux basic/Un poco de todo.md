@@ -82,3 +82,7 @@ touch archivo_tmp.txt
 cat /etc/passwd | grep username
 ```
 
+## Revertir una cadena
+```bash
+echo "$1" | rev
+```
