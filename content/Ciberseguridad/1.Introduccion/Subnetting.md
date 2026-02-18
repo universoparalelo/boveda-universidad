@@ -1,24 +1,23 @@
-### Que es?
-- Dividir la red lo justo y necesario para no desperdiciar direcciones IP
-- La mascara de red 255.255.255.0 tiene disponibles 254 direcciones IP para routers o dispositivos conectados a esa subred, que a su vez puede dividirse en mas subredes
-- Una mascara de /24 por ejemplo son 32-24 bits disponibles, es decir, 8 bits equivalentes a 2^8 y 256 direcciones disponibles.
+### ¿Qué es?
+- En una empresa con muchos dispositivos conectados a la misma red dividirla es clave para *no desperdiciar direcciones IP* y hacerlo de *forma segura*.
+- La mascara de red *255.255.255.0* tiene disponibles 254 direcciones IP para routers o dispositivos conectados a esa subred que, a su vez, puede dividirse en mas subredes.
+- Una mascara de */24* por ejemplo son *$(32-24) bits disponibles*, es decir, 8 bits equivalentes a *2^8 y 256* direcciones disponibles.
 - La cantidad de bits que conforman una direccion IP es 32, ya que son 4 octetos de 1s y 0s.
-- Entonces si tenemos una mascara de 24 bits significa que hay 24 bits fijos y el resto son tuyos.
+- Entonces si tenemos una mascara de 24 bits significa que hay 24 bits fijos y el resto pueden variar.
 - De alli se puede volver a dividir pero siempre en potencias de 2.
-- Podemos crear subredes de 8 direcciones, 16, 32, 64, 128 y 256. Luego siempre se le restan dos porque se utiliza una direccion como puerta de entrada o enlace y otra direccion para broadcast.
+- Podemos crear subredes de 8 direcciones, 16, 32, 64, 128 y 256. Pero para la cantidad final de hosts debemos restar dos porque se utiliza una direccion como puerta de entrada o enlace y otra direccion para broadcast, la primera y la última.
+### CIDR (Classless Inter-Domain Routing)
+- Enrutamiento de direcciones sin clases.
+- Sirve para asignar y gestionar direcciones IP en un rango completo de direcciones.
+- Se representa como IP/x, donde x es el valor de bits fijos, los restantes se pueden variar para asignar a los dispositivos de esa red.
 
-### CIDR
-- Enrutamiento de direcciones sin clases
-- Sirve para asignar y gestionar direcciones IP en un rango completo de direcciones
-- Se representa como /x, donde x es el valor de bits fijos, los restantes se pueden variar para asignar a los dispositivos de esa red
-![[Pasted image 20251202172644.png]]
+![[Pasted image 20251202172644.png|950]]
 
 ![[Pasted image 20251202175144.png]]
 
 Enlace para calcular https://www.ipaddressguide.com/cidr 
 
 ### Truco para calcular el comienzo
-
 **1) Calcular el SALTO**
 ```
 Salto = 256 − (octeto de la máscara donde NO es 255)
@@ -65,8 +64,6 @@ Salto: 16
 200 cae en 192–207  
 ✔ Net: **192.168.10.192**  
 ✔ Brd: **192.168.10.207**
-
-
 
 # Ejercicios
 ## 192.168.10.100/25
