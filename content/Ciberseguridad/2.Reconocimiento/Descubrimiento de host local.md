@@ -1,15 +1,12 @@
-### Nombrar todos los equipos configurados
+> Al hacer un reconocimiento de una red ya sea para una empresa pequenia o grande descubrir todas las direcciones IP de la misma es clave. Herramientas como nmap, arp-scan, scripts propios o masscan son alternativas para ello.
+### NMAP
 ```
 nmap -sn 192.168.100.1/24
 ```
 
-### Con ARP
+### ARP-SCAN
 ```
 arp-scan -I wlp2s0 --localnet --ignoredups
-```
-
-```
-ping -c 1 192.168.111.1
 ```
 
 ### Con un script propio para ICMP
@@ -36,7 +33,12 @@ wait
 tput cnorm
 ```
 
-### masscan
+### MASSCAN
 ```
 masscan -p22,80,8080,445,443 -Pn 192.168.111.0/24 --rate=5000
 ```
+
+## Comandos utilizados
+- [[nmap]]
+- [[arp-scan]]
+- [[masscan]]

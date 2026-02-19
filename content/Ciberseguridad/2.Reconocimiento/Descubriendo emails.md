@@ -9,3 +9,7 @@
 ### Para verificar una cuenta de correo electronico
 - https://www.verifyemailaddress.org/
 - https://email-checker.net/
+
+## Herramientas
+- [[phonebook]]
+- [[email-checker]]
