@@ -3,13 +3,16 @@
 # Samba =! SMB
 
 ## Herramientas
-- smbclient
-- smbmap
+- [[smbclient]]
+- [[smbmap]]
+- [[cracmapexec]]
 
 ## Caso practico
-[Caso practico](https://github.com/vulhub/vulhub/tree/master/samba/CVE-2017-7494)
-`svn checkout https://github.com/vulhub/vulhub/trunk/samba/CVE-2017-7494`
-Luego de ingresar a la carpeta probamos la siguiente instruccion:
+```
+cd vulhub/samba/CVE-2017-7494
+docker compose up -d
+```
+Luego probamos la siguiente instruccion:
 `smbclient -L 127.0.0.1 -N`
 Podemos probar con otra herramienta
 `smbmap -H 127.0.0.1`

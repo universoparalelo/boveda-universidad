@@ -65,5 +65,31 @@ Atacar la fe de los humanos en tiempo de guerra es perdida de tiempo porque El l
 El paciente de Orugario es llamado al servicio militar. Escrutopo le dice que aproveche esa situacion de suspenso y ansiedad. 
 *en todas las actividades del pensamiento que favorezcan nuestra causa, estimula al paciente a ser insconsciente de si mismo y a concentrarse en el objeto, pero en todas las actividades favorables al Enemigo haz que su mente se vuelva hacia si mismo.*
 Le habla sobre la dualidad dentro los humanos, por un lado la *benevolencia* (el querer hacer el bien) y la *malicia*. Como conviene practicar malicia con los vecinos para que se torne real y el sentimiento de benevolencia con gente que no conoce asi se hace mas imaginario.
+
+## Carta VII
+>Para: Orugario
+>De: Escrutopo
+
+Mantener al paciente ignorante de su propia existencia  
+Si los pacientes empiezan a pensar que hay alguien hablandoles para que hagan cosas malas entonces hay que mostrarles algo ridiculo sobre los demonios, como que usan mallas rojas y eso por logica no tiene nada de logico asi que no debe ser verdad  
+*Acerca de ser patriota o pacifista, no importa mientras se aleje del verdadero proposito de la religion*  
+El mundo es un fin, la fe un medio.
+## Carta VIII
+>Para: Orugario
+>De: Escrutopo
+
+Acerca de que los humanos somos anfibios: mitad espiritu, mitad animales.  
+Ley de la Ondulacion, estamos atado al tiempo y por lo tanto al cambio. Hay epocas de riqueza y vitalidad y otras de sequia y monotonia. *Son un fenomeno natural*.  
+Habla sobre como el Enemigo deja a sus siervos el libre albeldrio. En epocas donde es todo mas dificil concede ayuda y parece mas gratificante si hubiese sido dado en una buena epoca. El Enemigo quiere gente en sus filas mas mantener su individualidad. Ellos buscan saciarse, los pacientes son comida y ellos insaciables.
+## Carta IX
+>Para: Orugario
+>De: Escrutopo
+
+Formas para explotar al paciente en epocas de sequia.  
+1er forma: sexo. En epocas bajas no surge el enamoramiento.  
+2da forma: atacar el desconocimiento de la Ondulacion. A veces los pacientes piensan que su fe es una constante.
+3er forma: ataque directo a la fe. Hacerles creer a los pacientes que la baja es permanente y su fase religiosa llega su fin.
+Los placeres son del Enemigo, Ellos no pueden producirlo.
 ## Pensamiento aislados
-No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion
+No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.  
+A veces llenamos de nuestra limitaciones a otras personas, porque pensamos que hacemos lo correcto. El instinto humano: sobrevivir.

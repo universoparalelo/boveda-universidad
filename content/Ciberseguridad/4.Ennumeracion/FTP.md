@@ -1,9 +1,9 @@
 > Transferencia de archivos
 
 # Herramientas
-- https://github.com/garethflowers/docker-ftp-server
-- https://github.com/metabrainz/docker-anon-ftp
-- [Wordlist password](https://github.com/RykerWilder/rockyou.txt)
+- [[docker-ftp-server]]
+- [[docker-anon-ftp]]
+- [[Wordlist password]]
 
 ## FTP Server
 ```bash
@@ -24,8 +24,8 @@ La contrasenia la cambiamos por una palabra de una wordlist de 14 millones, para
 `ftp 127.0.0.1` nos conectamos al localhost
 `nmap -sCV -p21 127.0.0.1` para conocer la version y servicio que esta corriendo en ese puerto en localhost
 
-## Fuerza bruta
-- `sudo apt install hydra`
+## [[Fuerza bruta]]
+- [[hydra]]
 - `hyfra -l user -P passlist.txt ftp://192.168.0.1 -t 15`
 
 ## FTP Server con anonymous
