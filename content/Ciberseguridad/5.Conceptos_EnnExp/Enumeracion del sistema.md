@@ -1,18 +1,15 @@
 > Una vez comprometida una maquina Linux vendria la etapa de reconocimiento.
 ## Herramientas
-- [lse](https://github.com/diego-treitos/linux-smart-enumeration)
-- [linenum](https://github.com/rebootuser/LinEnum)
-- [pspython](https://github.com/DominicBreuker/pspy)
-- [gtobins](https://gtfobins.github.io/)
-- [La Biblia](https://book.hacktricks.wiki/en/index.html)
+- [[lse]]
+- [[linenum]]
+- [[pspython]]
+- [[gtobins]]
+- [[Hack Tricks]]
 
 ## De forma automatica
 - Con lse:
-	- Vamos al repo y entramos a lse.sh, luego lo vemos en raw y copiamos la url
-	- `wget url`
-	- `chmod -x lse.sh`
 	- `./lse.sh -l 1`
-	- `./lse.sh`
+	- `./lse.sh -l 3`
 - Con linenum hacemos lo mismo para descargar solo el archivo .sh
 	- `./linenum.sh`
 - Para listar tareas que se ejecutan a intervalos constantes:
@@ -74,7 +71,7 @@ tput civis
 
 while true; do
 	new_process=$(ps -eo user,command)
-	diff <(echo "$old_process") < (echo "$new_process") | grep "[\>\<]" | grep -vE "command|kworker|procmon"
+	diff <(echo "$old_process") <(echo "$new_process") | grep "[\>\<]" | grep -vE "command|kworker|procmon"
 	old_process=$new_process
 done
 ```

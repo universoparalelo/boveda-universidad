@@ -1,9 +1,9 @@
 ## Herramientas
-- [SQLinjection-training-app](https://github.com/appsecco/sqlinjection-training-app)
-- sqlmap
+- [[sqlmap]]
+- [[burpsuite]]
 
-## SQL injections de forma automatica
-- Para esto te clonas el repo de sqlinjection-training-app y preparamos el ambiente
+## De forma automatica
+- Para esto te clonas el repo de [[SQLinjection-training-app]] y preparamos el ambiente
 ```bash
 git clone https://github.com/appsecco/sqlinjection-training-app
 cd sqlinjection-training-app

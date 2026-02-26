@@ -1,0 +1,3 @@
+- [Link](https://github.com/DominicBreuker/pspy)
+- Zona de releases `x64`
+- `chmod +x pspy.sh`

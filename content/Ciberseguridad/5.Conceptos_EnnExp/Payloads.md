@@ -5,4 +5,4 @@ Hay dos tipos:
 - [[Not staged]]
 
 ### Herramienta
-- [[msfvenom]]
+- [[Metasploit Framework]]
