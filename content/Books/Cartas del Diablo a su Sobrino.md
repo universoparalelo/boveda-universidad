@@ -90,6 +90,31 @@ Formas para explotar al paciente en epocas de sequia.
 2da forma: atacar el desconocimiento de la Ondulacion. A veces los pacientes piensan que su fe es una constante.
 3er forma: ataque directo a la fe. Hacerles creer a los pacientes que la baja es permanente y su fase religiosa llega su fin.
 Los placeres son del Enemigo, Ellos no pueden producirlo.
+
+## Carta X
+>Para: Orugario
+>De: Escrutopo
+
+El paciente hizo nuevos amigos ricos, superficiales y escepticos.
+*Todos los humanos tienden a convertirse en lo que pretenden ser*, no me parece nada malo, habria que comprender que queremos ser.
+**Mammón** es un término bíblico y arameo que personifica la riqueza material, la avaricia y el afán desordenado por el dinero, a menudo descrito como un dios falso o demonio.
+A veces en la presencia de ciertas personas aceptamos ciertos comportamientos que en privado aborrecemos.
+Vanidad interna, sentir que somos mejores que los demas, que somos mas espirituales, mas profundos, mas importantes.
+Cuando a veces las amistades nos alejan de nuestras obligaciones.
+## Carta XI
+>Para: Orugario
+>De: Escrutopo
+
+Los nuevos amigos del paciente le presentan a todo el grupo. Personas frivolas.
+Hay cuatro tipos de risas: *alegria, diversion, chiste y ligereza*.
+El humor se puede usar para escudarse de muchas situaciones de crueldad, cobardia u obsenidades.
+*Que se refiere con la ligereza? cualquier tema serio se trata de un modo que ya se le encontro el lado ridiculo*
+## Carta XII
+>Para: Orugario
+>De: Escrutopo
+
+Las decisiones son *triviales y revocables*, cuantas veces nos dimos cuenta demasiado tarde de la gravedad de nuestra situacion?
+Generar una resistencia a pensar en el Enemigo a traves de la culpabilidad. Te echas la culpa por no hacer algo y entonces surge que cada vez que pensas en ello te sentis culpable lo que causa que cada vez quieras pensar menos en ella.
 ## Pensamiento aislados
 No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.  
 A veces llenamos de nuestra limitaciones a otras personas, porque pensamos que hacemos lo correcto. El instinto humano: sobrevivir.

