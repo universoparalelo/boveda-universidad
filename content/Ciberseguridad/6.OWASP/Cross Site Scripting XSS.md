@@ -2,6 +2,8 @@
 
 ## Herramientas
 - [[SecDevLabs]]
+- [[vulnhub]]
+- [[myExpense]]
 
 ## Caso practico
 - Una vez clonado el repositorio SecDevLabs, accedemos a `/owasp-top10-2021-apps/a3/gossip-world` y ejecutas `make install`
@@ -105,6 +107,7 @@ req2.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 req2.send(data);
 ```
 
-## Maquina virtual
-- Fuente [vulnhub](https://www.vulnhub.com/)
-- Maquina virtual a resolver [MyExpense:1](https://www.vulnhub.com/entry/myexpense-1,405/)
+## Maquina myExpense
+- Herramienta: virtualbox
+### Pasos
+- Descubrimiento
