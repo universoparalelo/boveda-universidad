@@ -9,5 +9,5 @@ $ docker build -t xxelab .
 
 ## Construccion
 ```
-$ docker run -dit --rm -p 127.0.0.1:5000:80 xxelab
+$ docker run -dit -p 127.0.0.1:5000:80 xxelab
 ```

