@@ -53,3 +53,57 @@ for _ in range(n):
 
 print(x)
 ```
+
+### 08/04/2026
+Next Round - 27 minutos - 92 ms - 3 intentos
+```
+n, k = map(int, input().split())
+puntajes = list(map(int, input().split()))
+
+h = 0
+for valor in puntajes:
+   if valor >= puntajes[k-1] and valor != 0:
+       h+=1
+
+print(h)
+```
+
+Domino piling - 5 minutos - 124 ms - 1 intento
+```
+m,n = map(int, input().split())
+
+t=m*n
+
+print(t//2)
+```
+
+Beautiful Matrix - 10 minutos - 124 ms - 1 intento
+```
+m = []
+
+for _ in range(5):
+    line = list(map(int, input().split()))
+    m.append(line)
+
+for i in range(5):
+    for j in range(5):
+        if m[i][j] == 1:
+            print(abs(i-2)+abs(j-2))
+            break
+```
+
+Petya and Strings - 10 minutos - 156 ms - 1 intento
+```
+a = list(input())
+b = list(input())
+
+for i in range(len(a)):
+    if ord(a[i].lower()) > ord(b[i].lower()):
+        print(1)
+        exit()
+    elif ord(b[i].lower())>ord(a[i].lower()):
+        print(-1)
+        exit()
+
+print (0)
+```
