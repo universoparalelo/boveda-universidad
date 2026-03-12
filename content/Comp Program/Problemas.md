@@ -3,10 +3,15 @@ Watermelon - 15 minutos - 122 ms - 3 intentos
 ```
 n = int(input())
 
-if n%2 == 0 and n
+if n%2 == 0 and n > 2:
     print("YES")
 else:
     print("NO")
+```
+- Mejora
+```python
+n = int(input())
+print("YES" if n % 2 == 0 and n > 2 else "NO")
 ```
 
 Way Too Long Words - 22 minutos - 46 ms - 2 intentos
@@ -25,9 +30,20 @@ for _ in range(n):
 for i in a:
     print(i)
 ```
+- Mejora
+```python
+n = int(input())
+
+for _ in range(n):
+    w = input()
+    if len(w) > 10:
+        print(w[0] + str(len(w)-2) + w[-1])
+    else:
+        print(w)
+```
 
 Team - 4 minutos - 124 ms - 1 intento
-```
+```python
 n = int(input())
 r = 0
 
@@ -40,12 +56,12 @@ print(r)
 ```
 
 Bit++ - 4 minutos - 62 ms - 1 intento
-```
+```python
 n = int(input())
 x = 0
 
 for _ in range(n):
-    s = list(input())
+    s = list(input()) # no es necesario convertir a lista, los strings son indexables
     if s[1] == '+':
         x += 1
     else:
@@ -67,9 +83,18 @@ for valor in puntajes:
 
 print(h)
 ```
+- Mejora:
+```python
+n, k = map(int, input().split())
+scores = list(map(int, input().split()))
+
+threshold = scores[k-1]
+
+print(sum(1 for s in scores if s >= threshold and s > 0))
+```
 
 Domino piling - 5 minutos - 124 ms - 1 intento
-```
+```python
 m,n = map(int, input().split())
 
 t=m*n
@@ -78,7 +103,7 @@ print(t//2)
 ```
 
 Beautiful Matrix - 10 minutos - 124 ms - 1 intento
-```
+```python
 m = []
 
 for _ in range(5):
@@ -89,7 +114,7 @@ for i in range(5):
     for j in range(5):
         if m[i][j] == 1:
             print(abs(i-2)+abs(j-2))
-            break
+            break # mejor usar exit() porque hay un solo cero
 ```
 
 Petya and Strings - 10 minutos - 156 ms - 1 intento
@@ -106,4 +131,129 @@ for i in range(len(a)):
         exit()
 
 print (0)
+```
+- Python ya tiene comparacion lexicografica
+```python
+a = input().lower()
+b = input().lower()
+
+if a > b:
+    print(1)
+elif a < b:
+    print(-1)
+else:
+    print(0)
+```
+### 10 de marzo
+Boy or Girl - 6 minutos - 124 ms - 1 intento
+```
+name = input()
+c = []
+
+for letter in name:
+    if letter not in c:
+        c.append(letter)
+
+if len(c)%2 == 0:
+    print('CHAT WITH HER!')
+else:
+    print('IGNORE HIM!')
+```
+- Es mucho mas eficiente usar **set** para evitar el **not in c**:
+```python
+name = input()
+
+if len(set(name)) % 2 == 0:
+    print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
+```
+
+
+Helpful Maths - 3 minutos - 124 ms - 1 intento
+```python
+line = input().split('+')
+line.sort()
+
+print("+".join(line))
+```
+
+Word Capitalization - 6 minutos - 92 ms - 1 intento
+```python
+c = input()
+n = c[1:]
+
+print(f'{c[0].upper()}{n}')
+```
+
+Bear and Big Brother - 5 minutos - 62 ms - 1 intento
+```python
+a, b = map(int, input().split())
+years = 0
+
+while a <= b:
+    a *= 3
+    b *= 2
+    years += 1
+
+print(years)
+```
+
+### 12 de marzo
+Elephant - 12 minutos - 46 ms - 1 intento
+```
+n = int(input())
+p = 0
+
+for i in range(5,1,-1):
+    if n >= i:
+        resto = n % i
+        p += (n//i)
+        n = resto
+    
+if n != 0:
+    p += 1
+
+print(p)
+```
+
+Stones - 6 minutos - 124 ms - 1 intento
+```
+n = int(input())
+stones = input()
+count = 0
+
+for i in range(n-1):
+    if stones[i] == stones[i+1]:
+        count += 1
+
+print(count)
+```
+
+Soldier and Bananas - 12 minutos - 46 ms - 1 intento
+```
+k, n, w = map(int, input().split())
+
+total_n = sum(i*k for i in range(1,w+1))
+
+if total_n - n > 0:
+    print(total_n - n)
+    exit()
+
+print(0)
+```
+
+Word - 5 minutos - 124 ms - 1 intento
+```
+w = input()
+count_l = 0
+
+for l in w:
+    if l > 'Z':
+        count_l += 1
+
+if count_l >= len(w)-count_l:
+    print(w.lower())
+else:
+    print(w.upper())
 ```
