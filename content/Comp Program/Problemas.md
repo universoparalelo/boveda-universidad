@@ -257,3 +257,65 @@ if count_l >= len(w)-count_l:
 else:
     print(w.upper())
 ```
+
+### 15 de marzo
+Wrong substraction - 18 minutos - 46 ms - 1 intento
+```
+n, k = map(int, input().split())
+
+while k > 0:
+    if n % 10 != 0:
+        if n % 10 <= k:
+            r = n % 10
+            n -= r
+            k -= r
+        else:
+            n -= 1
+            k -= 1
+    else:
+        n = n / 10
+        k -= 1
+
+print(int(n))
+```
+
+Nearly Lucky Numbers - 13 minutos - 156 ms - 1 intento
+```
+from collections import Counter 
+
+n = input()
+c = Counter(n)
+
+print("YES" if ((c['4']+c['7']) == 4 or (c['4']+c['7']) == 7)  else "NO")
+```
+
+Anton And Danik - 13 minutos - 62 ms - 2 intentos
+```
+from collections import Counter 
+n = int(input())
+w = input()
+c = Counter(w)
+
+if c['A'] > c['D']:
+    print('Anton')
+elif c['A'] == c['D']:
+    print('Friendship')
+else:
+    print('Danik')
+```
+
+Translation - 5 minutes - 62 ms - 1 intento
+```
+w = input()
+t = input()
+s = ""
+
+for i in range(len(w)-1, -1, -1):
+    s += w[i]
+
+if s == t:
+    print('YES')
+else:
+    print('NO')
+```
+
