@@ -23,7 +23,7 @@ El ataque **Padding Oracle** ocurre cuando un servidor responde de manera distin
 El atacante manipula el bloque de texto cifrado anterior ($C_{i-1}$) para alterar el resultado del texto plano del bloque actual ($P_i$) tras el descifrado.
 
 1. **Modificación del Bit:** El atacante envía un bloque cifrado modificado.
-2. **La Respuesta del "Oráculo":** * Si el servidor responde con un error de aplicación, el padding era **correcto**.
+2. **La Respuesta del "Oráculo":** Si el servidor responde con un error de aplicación, el padding era **correcto**.
     - Si el servidor responde con un error de "Padding inválido", el atacante sabe que su modificación rompió la estructura.
 3. **Fuerza Bruta Dirigida:** Al probar los 256 valores posibles para un byte del bloque previo y observar cuándo el servidor acepta el padding, el atacante puede deducir el valor original del texto plano mediante álgebra simple de XOR.
 
