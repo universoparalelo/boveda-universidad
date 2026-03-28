@@ -101,6 +101,7 @@ El paciente hizo nuevos amigos ricos, superficiales y escepticos.
 A veces en la presencia de ciertas personas aceptamos ciertos comportamientos que en privado aborrecemos.
 Vanidad interna, sentir que somos mejores que los demas, que somos mas espirituales, mas profundos, mas importantes.
 Cuando a veces las amistades nos alejan de nuestras obligaciones.
+
 ## Carta XI
 >Para: Orugario
 >De: Escrutopo
@@ -109,12 +110,56 @@ Los nuevos amigos del paciente le presentan a todo el grupo. Personas frivolas.
 Hay cuatro tipos de risas: *alegria, diversion, chiste y ligereza*.
 El humor se puede usar para escudarse de muchas situaciones de crueldad, cobardia u obsenidades.
 *Que se refiere con la ligereza? cualquier tema serio se trata de un modo que ya se le encontro el lado ridiculo*
+
 ## Carta XII
 >Para: Orugario
 >De: Escrutopo
 
 Las decisiones son *triviales y revocables*, cuantas veces nos dimos cuenta demasiado tarde de la gravedad de nuestra situacion?
-Generar una resistencia a pensar en el Enemigo a traves de la culpabilidad. Te echas la culpa por no hacer algo y entonces surge que cada vez que pensas en ello te sentis culpable lo que causa que cada vez quieras pensar menos en ella.
+Generar una resistencia a pensar en el Enemigo a traves de la culpabilidad. Te echas la culpa por no hacer algo y entonces surge que cada vez que pensas en ello te sentis culpable lo que causa que cada vez quieras pensar menos en ello.
+
+## Carta XIII
+> Para: Orugario
+> De: Escrutopo
+
+El paciente de Orugario lee un libro, toma un té y da un paseo solo y, aparentemente, se le aparece el Enemigo.
+Escrutopo esta enojado con Orugario porque le dejó a su paciente leer un libro que genuinamente disfrutaba, no para contarselo luego a sus amigos, y también dejó que haga un paseo y solo, los llamó placeres reales, que son terribles para sus fines (malignos).
+El paciente se arrepiente y se renueva, lo cual es una derrota de primer orden.
+*El placer real como cura*
+*Lo caracteristico de las penas y de los placeres es que son inequívocamente reales y le dan un patrón de realidad al hombre*. Si estas sufriendo por mil escenarios terribles en tu cabeza un dolor de muelas por cinco minutos te hacen olvidar completamente ello, las penas reales siempre ganan contra los sufrimientos mentales.
+Igualmente hay veces que es realmente dificil ganarle a esos pensamientos que no nos permitimos un paseo o un libro o cualquier cosa que nos dé placer porque queremos seguir viviendo en el sufrimiento. Como si fuese lo único que conocemos. El poder decir basta y reconocer que estamos cavando nuestro propio sufrimiento implica mirar el desastre que hicimos con nosotros o con alguien más.
+El Enemigo también quiere apartarnos de nosotros mismo pero en otro sentido. Quiere hacerlo para que luego seamos más "nosotros mismos".
+Hay gustos e inclinaciones profundas que tenemos todas las personas, que nos provee el Enemigo como punto de partida. Entonces si disfrutamos de leer, debemos leer lo que está en tendencia o lo que leyó tal persona, hay un interés detrás. Hacer algo que me gusta pero por la razón más artificial posible, que pecado en verdad.
+**Los hábitos se refuerzan por la repetición, pero los pasivos se debilitan**. Cuanto más a menudo sienta sin actuar, menos será capaz de actuar alguna vez y a la larga menos capaz será de sentir.
+
+
+## Carta XIV
+> Para: Orugario
+> De: Escrutopo
+
+El paciente se vuelve humilde, Escrutopo está que arde.
+Consejo de Escrutopo: cuando el paciente esté pobre de espíritu hacerle sentir orgullo acerca de su comportamiento, si se siento orgullo listo ganamos, si no lo hace hacerle sentir orgulloso porque resistió sentirse orgulloso antes. Si no da buenos resultados no hay que insistir porque si el paciente logra reirse y despertar su sentido del humor lo hemos perdido.
+*El autodesprecio puede iniciar un odio hacia los demás*. Tanta sabiduria, tan adelantado a su tiempo.
+La humildad como mala opinion acerca de nuestro carácter y talentos, que son menos valiosos de lo que realmente creemos. 
+	**El síndrome del Impostor**: cuando creemos que nuestros logros se deben a pura suerte o casualidad.
+Alegrarnos de nuestros logros, liberarnos de esos prejuicios hacia nosotros mismos, soltar esas cadenas para que sepamos de lo que somos capaces, de las bellezas que podemos hacer y hacerlas y estar orgullosos y que otros estén orgullosos y estar orgullosos de otros, expandir esa felicidad.
+*El humor como forma de escape*
+```markdown
+La humildad es una **virtud humana basada en el conocimiento y aceptación de las propias limitaciones y debilidades**, obrando de acuerdo con este conocimiento sin buscar la superioridad. Implica modestia, sencillez y un espíritu enseñable, siendo el antídoto contra el orgullo. No es debilidad, sino fortaleza para reconocer errores y valorar a los demás.
+```
+
+
+## Carta XV
+> Para: Orugario
+> De: Escrutopo
+
+*Atender a la eternidad misma y el punto del tiempo llamado presente.* Al pensar en el futuro pensamos en cosas irreales, porque no conocemos.
+Hacerles pensar en el pasado puede ser bueno, pero como el pasado ya pasó, hay hechos concretos, no se puede especular es limitado.
+Pensar en el futuro les hace tener esperanza y temor, es la menos parecida a la eternidad.
+Los vicios tienen las raices en el futuro. La ludopatia, la obsesion de volverse millonario con una tirada mas.
+Pensar en el futuro es bueno en la medida que se planifique lo que se hace al dia siguiente.
+
 ## Pensamiento aislados
 No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.  
 A veces llenamos de nuestra limitaciones a otras personas, porque pensamos que hacemos lo correcto. El instinto humano: sobrevivir.
+Hay cosas buenas, hay cosas malas. No se queda en el simple blanco y negro, esto es asi o de esta otra forma o si no se adapta a esto es esto otro. Abarca los grises, va a la excepciones, da explicaciones, utiliza ejemplos. Nos da un espejo en cierta forma.
