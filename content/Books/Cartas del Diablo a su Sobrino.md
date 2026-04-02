@@ -43,7 +43,7 @@ Como desviar la atencion de su paciente. Evitar que se le ocurran cosas.
 *Enséñales que el valor de cada oración se mide por su eficacia para provocar el sentimiento deseado*. Si pido por la salud de un familiar, yo me siento mas sano entonces por eso mi oracion funciono, recé bien. Es raro pero antes habla sobre crear sensaciones o sentimientos haciendo alusión a lo pasajero que son. 
 Habla de qué es realmente la oración y lo que a veces buscamos a través de ella puede no ser lo que esperabamos.
 Como no conocemos lo peor, no lo vivimos, no lo sentimos es facil para ellos traernos al lado malo. Como nunca te lesionaste la rodilla, no vas a hacer ejercicios para fortalecerla y vas a ignorar pequeños dolores que son advertencias.
-la Encarnacion y sus otras dos Personas.
+La Encarnacion y sus otras dos Personas.
 *hay una verdadera desnudez del alma en la oracion que los humanos no la deseamos tanto como suponemos*
 
 ## Carta V
@@ -158,6 +158,41 @@ Hacerles pensar en el pasado puede ser bueno, pero como el pasado ya pasó, hay 
 Pensar en el futuro les hace tener esperanza y temor, es la menos parecida a la eternidad.
 Los vicios tienen las raices en el futuro. La ludopatia, la obsesion de volverse millonario con una tirada mas.
 Pensar en el futuro es bueno en la medida que se planifique lo que se hace al dia siguiente.
+
+## Carta XVI
+> Para: Orugario
+> De: Escrutopo
+
+El paciente va mucho a la Iglesia.
+*... lo mejor que se puede hacer es enviarle a recorrer todo el barrio, en busca de la iglesia que le va, hasta que se convierta en un catador o connoisseur de iglesias.*
+Me parece un forma de distraccion. En vez de centrarse en practicar su religion y hacer crecer su amor por el Enemigo se centra en cosas triviales y critica. Como un circo, ridiculizando iglesias por x motivo.
+Fomentar esta postura o estado mental de estar abierto a aprender, a mezclarse, a aceptar todo como es.
+Hay una iglesia cerca del paciente donde hay un vicario que repite los mismos salmos para ahorrarle dificultades a los laicos. En la repeticion hay algo de que nunca se logra aprender mas de lo que ya se aprendio. El conocimiento se estanca, se acostumbra y repite.
+En la otra iglesia hay un padre que cambia muy dracticamente su opinion acerca de multiples temas y a veces habita extremos opuestos del dia anterior, todas las opiniones alimentadas por el odio y por lo tanto es lo predica.
+*cuanto mas tibio mejor*, sobre no tomar posturas o tomarlas violentamente.
+Me parece que el capitulo habla sobre perder el foco de lo importante y hacer de las nimiedades un mundo.
+
+## Carta XVII
+> Para: Orugario
+> De: Escrutopo
+
+Gula: **Exceso en la comida o bebida, y apetito desordenado de comer y beber**
+Pero en el capitulo no hablan de hacerle comer mas al paciente o incitarle a que se de una recompensa, sino que hacen de lo que quieren su esclavitud. Quieren algo y deben tenerlo, como ellos quieren, de la forma que lo quieren y cuando lo piden.
+Que importan las cantidades con tal de que podarmos servirnos del estomago y del paladar humano para provocar quejumbrosidad, impaciencia, dureza y egocentrismo.
+En los hombres se aboga por su vanidad y su "sentido culinario"
+*Los juegos o deportes como ayuda para la castidad.* 
+
+## Carta XVIII
+> Para: Orugario
+> De: Escrutopo
+
+*La primer gran Derrota*: cuando Eva comio del fruto e incito a Adan a hacerlo y fueron hechados del Paraiso.
+**Estar enamorados** como unica base respetable para estar casados y si no lo estan dejan de estar casados. _Parodia del enemigo_
+**Individualidad**, mi bien es mi bien y lo que yo gano es algo que mi projimo perdio.
+*Las cosas han de ser muchas pero tambien, de algun modo, solo una*, a esta imposibilidad tambien se le conoce como AMOR
+No me gusta lo que dice acerca del yacer con una mujer y demas asi que lo pienso ignorar.
+El estar con otrx persona implica una union en algun sentido y deberia hacerse con plena conciencia, mi opinion personal. Pero tampoco te liga eternamente a otra persona, se esta demonizando nuevamente el sexo? Antes decia que el Enemigo crea placeres, los demonios no pueden.
+Casarse o no, decision de cada uno.
 
 ## Pensamiento aislados
 No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.  
