@@ -10,4 +10,20 @@
 
 ## Laboratorio
 - [crAPI](https://github.com/OWASP/crAPI)
+- `cd crAPI/deploy/docker`
+- `docker compose pull`
+- `docker compose -f docker-compose.yml --compatibility up -d`
+- Debe salir todo bien, todo healthy, sino elimina todo y vuelve a intentar. Y si tampoco funciona hay un archivo para los troubleshooting.
+
+## Formas de explotar
+- Cuando me olvide la contrasenia me pide solo la nueva y un token llamado otp que son 4 digitos, aplicamos fuerza bruta.
+- Hay urls que se basan en versiones, y lo especifican en la url, entonces al volver a una version anterior podemos utilizar esa vulnerabilidad.
+- Hay veces que al ennumerar que metodos se pueden usar para una url determinada se puede usar post, con el cual podemos crear objetos de forma no autorizada, porque no somos los administradores del sitio, y crear un producto con valor negativo (-1000) y comprarlo para asi tener mas dinero.
+- Cuando creamos un vehiculo podemos ennumerar los vehiculos de otras personas y ver informacion personal, por posts que realizan a un foro.
+- Los cupones tambien detras tiene una base de datos mongo y podemos aplicar inyecciones nosql
+- *Podriamos ver si aplica lo mismo en el login*
+
+## Herramientas 
+- [[postman]]
+
 
