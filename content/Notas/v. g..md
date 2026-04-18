@@ -1,0 +1,1 @@
+> Verbi gratia (o su forma hispanizada verbigracia) es una locución adverbial latina que significa **"por gracia de la palabra"** y se utiliza comúnmente como sinónimo de "por ejemplo". Su abreviatura es v. g. o v. gr. y se emplea para ilustrar una afirmación, siendo un conector formal o culto.
