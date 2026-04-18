@@ -194,6 +194,25 @@ No me gusta lo que dice acerca del yacer con una mujer y demas asi que lo pienso
 El estar con otrx persona implica una union en algun sentido y deberia hacerse con plena conciencia, mi opinion personal. Pero tampoco te liga eternamente a otra persona, se esta demonizando nuevamente el sexo? Antes decia que el Enemigo crea placeres, los demonios no pueden.
 Casarse o no, decision de cada uno.
 
+## Carta XIX
+> La idea del Amor del Enemigo
+- Se sostiene que el Enemigo no ama realmente a los pacientes, debe haber un motivo detrás, un interés.
+- Según relatos Nuestra Padre preguntó al Enemigo acerca de ello y como no fue respondido de manera contundente se marchó y el Cielo circuló la guerra existente entre los bandos.
+- Aseguran que el Enemigo no puede amar, nadie puede, no tiene sentido.
+- Lo importante no está en si tal cosa es "buena" o "mala", si no que estado de ánimo dadas esas circunstancias mueven al paciente en un momento particular hacia el Enemigo o hacia nosotros.
+
+## Carta XX
+> La creencia de los humanos ignorantes de que no hay esperanza de librarse de nosotros, excepto rendirse.
+- Perdieron la pelea de la castidad con su paciente y el Enemigo, pero aconseja acerca de que tipo de mujer persuadirle de enamorarse. Fijese que usa el enamoramiento como estado profundo de manipulación.
+- Hay maestros encargados de producir desviaciones en el *gusto sexual*.
+- *Bueno aca dice que mediante los artistas se determinan esas modas, que lograron que la barba sea desagradable para las mujeres y enseñan a los hombres que le gusten mujeres cuyos cuerpos se pueden distinguir apenas del de los hombres*. Esta parte siempre estoy en desacuerdo, habla de muy blanco o negro, enchufe hembra, enchufe macho, me genera repulsión.
+- Hay dos direcciones: desea desear brutalmente o desea sumisamente a la forma del Enemigo.
+
+## Carta XXI
+> Ataque a la impaciencia del paciente y la posesión temporal y material
+- **Cuanto más exigimos a la vida, más a menudo te sentirás ofendido**. Sentir que te merecias algo que te fue negado.
+- Cuando el sentimiento de propiedad nos nubla la mente y nos pone de mal humor, como cuando perdimos tiempo en el tráfico o un amigo no para de hablarnos.
+
 ## Pensamiento aislados
 No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.  
 A veces llenamos de nuestra limitaciones a otras personas, porque pensamos que hacemos lo correcto. El instinto humano: sobrevivir.
