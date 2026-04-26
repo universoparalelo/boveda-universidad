@@ -3,7 +3,7 @@
 ## Preparacion
 - Descargamos una imagen de ubuntu y lo corremos hacer port forwarding -p80:80
 - Actualizamos, iniciamos apache2 y hacemos el archivo para lograr ejecutar comandos por url
-```
+```php
 apt update
 apt install apacyhwe2 php nano curl net-tools
 
@@ -39,7 +39,7 @@ curl 127.0.0.1:8000/cmd.php?cmd=whoami
 
 ### Nivel de configuracion
 - Nos dirigimos a `cd /etc/system/`
-```
+```php
 nvim apt-update.service
 
 --------------------------------------
@@ -97,7 +97,7 @@ watch -n 1 systemctl list-timers
 chmod o+w /etc/apt/apt.conf.d
 ```
 - Entonces podremos elegir que tareas se ejecutan antes de ejecutar un servicio, como una preinvocacion a este servicio.
-```
+```php
 su savitar
 find / -name apt-update.timer 2>/dev/null
 cat /etc/ssystemc/system/apt-update.service
