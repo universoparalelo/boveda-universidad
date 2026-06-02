@@ -1,4 +1,22 @@
-## Movimiento
+## Para crear o escribir en un archivo con vim
+`vim hola.txt`
+
+## Modos
+En vim existen tres modos, segun en el que estes los comandos varian su accion. Por defecto siempre estamos en modo normal, excepto que queramos modificar el texto (insert) o copiarlo (visual)
+## Modo normal
+- Es de lectura por lo tanto no podes escribir
+- Podes seleccionar un texto y copiarlo
+- Podes pegar texto
+- Ingresas con `escape`
+
+## Modo insert
+- Es de escritura pero si te queres mover podes usar las flechas
+- Poder pegar texto con `ctrl_shift_v`
+- Ingresas con la `a` delante del caracter que estas parado o con `i` por detras del mismo
+## Modo visual
+- Este modo se usa para copiar un texto
+- Ingresas desde un modo normal con la tecla `v`
+## Movimiento (o las flechas de movimiento)
 `h` - izquierda
 `j` - abajo
 `k` - arriba
@@ -29,8 +47,8 @@
 `q` -  salis del modo grabar
 `30@a` - repetis los comandos grabados 30 veces
 
-`:%s/nologin/yeslogin` - reemplaza **todas** las apariciones de nologin a yeslogin
-`:%s/nologin/yeslogin/g` - similar al anterior
+`:%s/nologin/yeslogin/g` - reemplaza **todas** las apariciones de nologin a yeslogin
+`:%s/nologin/yeslogin` - reemplaza la primer aparicion de nologin a yeslogin
 
 `:q` - salir
 `:wq` - escribir y salir
