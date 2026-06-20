@@ -1,0 +1,1 @@
+Una **elegía** es una ==composición poética del género lírico en la que el autor expresa dolor, tristeza o melancolía==.

