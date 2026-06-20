@@ -38,7 +38,7 @@ curl 127.0.0.1:8000/cmd.php?cmd=whoami
 - Somos root
 
 ### Nivel de configuracion
-- Nos dirigimos a `cd /etc/system/`
+- Nos dirigimos a `cd /etc/systemd/`
 ```php
 nvim apt-update.service
 
@@ -68,7 +68,7 @@ WantedBy=timers.target
 - Estamos creando instrucciones para que se corran en el sistema, en este caso para actualizar
 - Primero recargamos
 ```
-systemclt daemon-reload
+systemctl daemon-reload
 ```
 - Despues habilitamos el timer y el service
 ```
