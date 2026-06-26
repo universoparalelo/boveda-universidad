@@ -1,8 +1,17 @@
+---
+tipo: indice
+tags: [anatomia, musculos, indice]
+---
+
+# Musculos por region
+
 ### Cuello
-- Esternomascleoideo
+- [[Musculos/Cuello|Ver nota atomica]]
+- Estenocleidomastoideo
 - Trapecio (parte superior)
 
 ### Hombro
+- [[Musculos/Hombro|Ver nota atomica]]
 - Deltoides (anterior, medio, posterior)
 - Supraespinoso
 - Infraespinoso
@@ -11,6 +20,7 @@
 ![[Pasted image 20251127155148.png]]
 
 ### Biceps
+- [[Musculos/Brazo|Ver nota atomica]]
 - Biceps braquial (dos cabezas: corta y larga)
 - Braquial
 - Coracobraquial
@@ -20,17 +30,20 @@
 - Anconeo
 
 ### Antebrazo
+- [[Musculos/Antebrazo-mano|Ver nota atomica]]
 - Braquioradial
 - Pronador redondo
 - Supinador
 - Extensores y flexores (grupos)
 
 ### Pecho
+- [[Musculos/Pecho|Ver nota atomica]]
 - Pectoral mayor
 - Pectoral menor
 - Serrato anterior
 
 ### Espalda
+- [[Musculos/Espalda|Ver nota atomica]]
 - Trapecio (superior, medio, inferior)
 - Dorsal ancho
 - Romboide mayor y menor
@@ -38,12 +51,14 @@
 - Erectores espinales (grupo)
 
 ### Abdomen
+- [[Musculos/Abdomen|Ver nota atomica]]
 - Recto abdominal
 - Oblicuos externos e internos
 - Transverso del abdomen
 - Cuadrado lumbar
 
 ### Cadera/Gluteo
+- [[Musculos/Cadera-gluteos|Ver nota atomica]]
 - Gluteo mayor, medio y menor
 - Tensor de la fascia lata
 - Psoas iliaco
@@ -51,6 +66,7 @@
 ![[Pasted image 20251127172045.png]]
 
 ### Cuadriceps
+- [[Musculos/Quadriceps|Ver nota atomica]]
 - Recto femoral
 - Vasto lateral
 - Vasto medio
@@ -59,15 +75,18 @@
 ![[Pasted image 20251127172112.png]]
 
 ### Isquiotibiales
+- [[Musculos/Isquiotibiales|Ver nota atomica]]
 - Biceps femoral
 - Semitendinoso
 - Semimembranoso
 
-### Adbuctores
+### Abductores
+- [[Musculos/Aductores|Ver nota atomica]]
 - Abductor mayor, largo y corto
 - Gracil
 
 ### Pantorrilla
+- [[Musculos/Pantorrilla|Ver nota atomica]]
 - Peroneos
 - Gastrocnemio
 - Soleo
@@ -75,5 +94,3 @@
 - Flexores y extensores del pie
 ![[Pasted image 20251127172310.png]]
 ![[Pasted image 20251127172334.png]]
-
-
