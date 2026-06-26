@@ -1,3 +1,9 @@
+---
+tipo: referencia
+tags: [cp, matematicas, teoria-numeros]
+categoria: matematicas
+---
+
 > Un numero primo es un numero positivo entero que tiene como unicos divisores al 1 y a si mismo
 
 ### Verificar que un numero es primo
@@ -10,7 +16,7 @@ def is_prime(n):
             return False
     return True
 ```
-- Con una complejidad de O(raiz (n))
+- Con una complejidad de O(raiz(n))
 
 ### [[Criba de Eratostenes]]
 - Para encontrar todos los primos hasta N
@@ -26,7 +32,7 @@ def sieve(n):
 
     return prime
 ```
-- Con una complejidad de O(n\*logn)
+- Con una complejidad de O(n log n)
 
 ### Factorizacion prima
 ```python
@@ -47,3 +53,7 @@ def prime_factors(n):
 ```
 - Complejidad O(raiz cuadrada n)
 
+## Relacionado con
+- [[Criba de Eratostenes]]
+- [[Aritmetica modular]]
+- [[MCD, MCM]]

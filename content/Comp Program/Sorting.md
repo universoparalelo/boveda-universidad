@@ -1,9 +1,16 @@
+---
+tipo: referencia
+tags: [cp, sorting, python]
+categoria: ordenamiento
+complejidad: O(n log n)
+---
+
 - Usados en python
 ```
 a.sort()
 b = sorted(a)
 ```
-- Complejidad = O(n\*log n)
+- Complejidad = O(n log n) — [[Big O]]
 - Ordenar por key
 ```
 a.sort(key=lambda x: x[i])
@@ -17,3 +24,6 @@ a.sort(reverse=True)
 sorted('cba')
 ```
 
+## Relacionado con
+- [[Big O]]
+- [[Busqueda lineal y binaria]]

@@ -1,5 +1,11 @@
+---
+tipo: referencia
+tags: [cp, matematicas, teoria-numeros]
+categoria: matematicas
+---
+
 ## MCD - Maximo comun divisor
-> El **MCD de dos números** es el número más grande que divide a ambos.
+> El **MCD de dos numeros** es el numero mas grande que divide a ambos.
 
 `MCD(12, 18) = 6` porque sus divisores son:
 ```
@@ -40,7 +46,7 @@ def gcd(a, b):
 ```
 
 ## MCM - Minimo comun multiplo
-> El **MCM** es el número más pequeño que es múltiplo de ambos.
+> El **MCM** es el numero mas pequeno que es multiplo de ambos.
 
 `MCM(4,6) = 12`
 ```
@@ -100,11 +106,11 @@ print(a, "/", b)
 ```
 
 ## Saber si a y b son coprimos
-- Los números coprimos (o primos entre sí) **son aquellos pares de números enteros cuyo único divisor común es el 1**. Esto significa que su Máximo Común Divisor (MCD) es igual a 1. No es necesario que los números sean primos individualmente; por ejemplo, 8 (1,2,4,8) y 9 (1,3,9) son coprimos.
+- Los numeros coprimos (o primos entre si) son aquellos pares de numeros enteros cuyo unico divisor comun es el 1. Esto significa que su Maximo Comun Divisor (MCD) es igual a 1. No es necesario que los numeros sean primos individualmente; por ejemplo, 8 (1,2,4,8) y 9 (1,3,9) son coprimos.
 - Caracteristicas
-	- **Números consecutivos:** Dos números naturales consecutivos siempre son coprimos (ej. 15 y 16, 100 y 101).
-	- **Números primos:** Dos números primos distintos son siempre coprimos (ej. 7 y 13).
-	- **Fracciones:** Si el numerador y el denominador de una fracción son coprimos, la fracción es irreducible.
+	- **Numeros consecutivos:** Dos numeros naturales consecutivos siempre son coprimos (ej. 15 y 16, 100 y 101).
+	- **Numeros primos:** Dos numeros primos distintos siempre son coprimos (ej. 7 y 13).
+	- **Fracciones:** Si el numerador y el denominador de una fraccion son coprimos, la fraccion es irreducible.
 ```
 if gcd(a,b) == 1:
     print("coprimos")
@@ -113,9 +119,9 @@ if gcd(a,b) == 1:
 ## Propiedad del MCD
 El MCD tiene una propiedad clave:
 `gcd(a,b)=gcd(a−b,b)`
-o también
+o tambien
 `gcd(a,b)=gcd(a,b−a)`
-Esto significa que **restar los números no cambia el MCD**.
+Esto significa que **restar los numeros no cambia el MCD**.
 
 - Por lo tanto:
 `gcd(20,12) = gcd(12,8)` que es 4
@@ -130,3 +136,6 @@ Esto significa que **restar los números no cambia el MCD**.
 - Y luego el mcd `gcd(6,6) = 6`
 - Entonces decimos que los valores estan separados por valores multiplos de 6
 
+## Relacionado con
+- [[Aritmetica modular]]
+- [[Numeros primos]]

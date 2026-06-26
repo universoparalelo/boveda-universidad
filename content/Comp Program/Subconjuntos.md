@@ -1,3 +1,9 @@
+---
+tipo: referencia
+tags: [cp, combinatoria, subconjuntos]
+categoria: combinatoria
+---
+
 > Dado un conjunto con n elementos
 > S = {ai,a2,a3,...,an}
 > Un subconjunto es cualquier seleccion de esos elementos (incluyendo todos o ninguno)
@@ -29,7 +35,7 @@ S = [1,2,3]
 - Si tenemos S = [A,B,C]
 ### Representacion en tabla
 
-| máscara | binario | subconjunto |
+| mascara | binario | subconjunto |
 | :------ | :------ | :---------- |
 | 0       | 000     | []          |
 | 1       | 001     | [A]         |
@@ -62,3 +68,6 @@ for mask in range(1 << n):
 ## Alternativas
 - Para soluciones con n mayores a 20 se utiliza **man in the middle**
 - Se dividen los valores, se usan estrategias matematicas, ordenar, podar, etc.
+
+## Relacionado con
+- [[Permutaciones]]

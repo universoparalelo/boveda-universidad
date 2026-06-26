@@ -1,3 +1,9 @@
+---
+tipo: referencia
+tags: [cp, python, estructuras]
+categoria: estructuras
+---
+
 ## Listas
 - Creacion
 ```
@@ -131,12 +137,5 @@ from collections import Counter
 Counter(s) # Counter(s)["a"]
 ```
 
-
-
-
-
-
-
-
-
-
+## Relacionado con
+- [[Entradas y Salidas]]

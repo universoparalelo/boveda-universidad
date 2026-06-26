@@ -1,3 +1,8 @@
+---
+tipo: referencia
+tags: [cp, busqueda, python]
+categoria: busqueda
+---
 
 ### Busqueda lineal
 ```
@@ -73,7 +78,7 @@ return "NO"
 
 ### Ejercicio 3 - Bisect
 - Dado un array ordenado y Q queries.
-- Para cada query x, imprimir cuántos números son ≤ x.
+- Para cada query x, imprimir cuantos numeros son ≤ x.
 - Debe ser O(Q log n).
 ```
 import bisect
@@ -94,3 +99,9 @@ print(*result)
 
 ## Bisect
 ![[Pasted image 20260302190057.png|592]]
+
+## Relacionado con
+- [[Sorting]]
+- [[Big O]]
+- [[Problemas/Busqueda binaria]]
+- [[Problemas/Two pointers]]

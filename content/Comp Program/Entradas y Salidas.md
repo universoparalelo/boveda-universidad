@@ -1,3 +1,9 @@
+---
+tipo: referencia
+tags: [cp, python, io]
+categoria: io
+---
+
 ## Leer entradas
 ### input()
 - input simple
@@ -77,3 +83,6 @@ for i in range(100000):
 
 print(",".join(res))
 ```
+
+## Relacionado con
+- [[Arrays y Strings]]

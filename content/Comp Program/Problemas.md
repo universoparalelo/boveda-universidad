@@ -1,3 +1,9 @@
+---
+tipo: bitacora
+tags: [cp, problemas, codeforces]
+estado: en-progreso
+---
+
 ### 3 de marzo
 Watermelon - 15 minutos - 122 ms - 3 intentos
 ```
@@ -319,3 +325,6 @@ else:
     print('NO')
 ```
 
+## Tecnicas relacionadas
+- [[Problemas/Busqueda binaria]]
+- [[Problemas/Two pointers]]

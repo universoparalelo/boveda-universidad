@@ -1,3 +1,9 @@
+---
+tipo: bitacora
+tags: [cp, contests]
+estado: en-progreso
+---
+
 A. Bingo candies
 ```
 t = int(input())

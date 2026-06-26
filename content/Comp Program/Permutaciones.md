@@ -1,4 +1,10 @@
-> Una **permutación** es un reordenamiento de elementos.
+---
+tipo: referencia
+tags: [cp, combinatoria, permutaciones]
+categoria: combinatoria
+---
+
+> Una **permutacion** es un reordenamiento de elementos.
 
 - Ejemplo:
 ```
@@ -12,25 +18,25 @@ Permutaciones:
 [3,1,2]
 [3,2,1]
 ```
-- Cantidad total:  n!
+- Cantidad total: n!
 
 ---
-## 🔢 Tipos importantes en CP
+## Tipos importantes en CP
 
-### ✔️ Permutaciones de 1..n
+### Permutaciones de 1..n
 
 Muy comunes:
 ```
 p = [2, 3, 1]
 ```
-- Interpretación:
-- índice → posición
-- valor → a dónde apunta
+- Interpretacion:
+- indice → posicion
+- valor → a donde apunta
 
 ---
-### ✔️ Permutación como grafo (MUY IMPORTANTE)
+### Permutacion como grafo (MUY IMPORTANTE)
 
-- Una permutación es un conjunto de **ciclos**.
+- Una permutacion es un conjunto de **ciclos**.
 - Ejemplo:
 ```
 p = [2, 3, 1]
@@ -41,13 +47,13 @@ p = [2, 3, 1]
 ```
 1 → 2 → 3 → 1
 ```
-👉 Esto aparece TODO el tiempo en problemas.
+Esto aparece TODO el tiempo en problemas.
 
 ---
 
-## 3. Ciclos de una permutación
+## 3. Ciclos de una permutacion
 
-### 🔹 Cómo encontrarlos
+### Como encontrarlos
 ```python
 p = [2, 3, 1]
 n = len(p)
@@ -77,48 +83,48 @@ for i in range(n):
 
         while not visited[j]:
             visited[j] = True
-            cycle.append(j + 1)   # guardamos el número (1-index)
+            cycle.append(j + 1)   # guardamos el numero (1-index)
             j = p[j] - 1
 
         cycles.append(cycle)
 ```
 
 ---
-### 💡 Propiedades importantes
-- Una permutación se descompone en ciclos disjuntos
-- Suma de tamaños de ciclos = n
-- Muy útil para:
-    - swaps mínimos
+### Propiedades importantes
+- Una permutacion se descompone en ciclos disjuntos
+- Suma de tamanos de ciclos = n
+- Muy util para:
+    - swaps minimos
     - detectar estructura
     - simulaciones
 
 ---
-## Número mínimo de swaps
+## Numero minimo de swaps
 
-- Para ordenar una permutación:
-`{swaps} = n - {cantidad de ciclos}`
+- Para ordenar una permutacion:
+`swaps = n - cantidad de ciclos`
 
 ---
-## Algoritmos clásicos
+## Algoritmos clasicos
 
-### 🔹 Generar permutaciones
+### Generar permutaciones
 ```python
 from itertools import permutations
 
 for p in permutations([1,2,3]):
     print(p)
 ```
-👉 Solo sirve para n ≤ 8 (fuerza bruta)
+Solo sirve para n ≤ 8 (fuerza bruta)
 
 ---
-### 🔹 Next Permutation (IMPORTANTÍSIMO)
-- Genera la siguiente permutación lexicográfica.
-1. Encontrar primer índice donde deja de crecer
+### Next Permutation (IMPORTANTISIMO)
+- Genera la siguiente permutacion lexicografica.
+1. Encontrar primer indice donde deja de crecer
 2. Intercambiar
 3. Revertir sufijo
 
 ---
-### 🔹 Inversa de una permutación
+### Inversa de una permutacion
 
 ```python
 inv = [0]*n
@@ -127,7 +133,7 @@ for i in range(n):
 ```
 
 ---
-### 🔹 Composición de permutaciones
+### Composicion de permutaciones
 
 ```python
 # r = p ∘ q
@@ -135,98 +141,97 @@ r[i] = p[q[i]]
 ```
 
 ---
-##  Permutaciones aplicadas k veces
-- Problema típico:
-> aplicar permutación k veces
+## Permutaciones aplicadas k veces
+- Problema tipico:
+> aplicar permutacion k veces
 
-- Si ciclo tiene tamaño `L`:
+- Si ciclo tiene tamano `L`:
 ```
-posición final = (pos + k) % L
+posicion final = (pos + k) % L
 ```
-👉 COMPLEJIDAD O(n)
+Complejidad O(n)
 
 ---
 ## Permutaciones y paridad
 
-- Permutación par/impar
+- Permutacion par/impar
 - Basado en cantidad de swaps
 
-💡 Útil en:
+Util en:
 - matrices
 - determinantes
 - puzzles
 
 ---
-## Problemas típicos de ICPC
+## Problemas tipicos de ICPC
 
-### 🧩 1. Detectar ciclos
+### 1. Detectar ciclos
 - contar ciclos
-- tamaño de ciclos
+- tamano de ciclos
 
 ---
-### 🔁 2. Aplicar k veces
-- usar módulo en ciclos
+### 2. Aplicar k veces
+- usar modulo en ciclos
 
 ---
-### 🔄 3. Ordenar con swaps mínimos
-- usar fórmula de ciclos
+### 3. Ordenar con swaps minimos
+- usar formula de ciclos
 
 ---
-### 🎯 4. Construir permutación
+### 4. Construir permutacion
 Ej:
-- sin puntos fijos    
+- sin puntos fijos
 - con restricciones
 
 ---
-### 🧠 5. Permutación válida
-- verificar si array es permutación:
+### 5. Permutacion valida
+- verificar si array es permutacion:
 ```python
 len(set(a)) == n and min(a)==1 and max(a)==n
 ```
 
 ---
-### 🧮 6. Conteo de permutaciones
+### 6. Conteo de permutaciones
 - factoriales
 - combinatoria
 
 ---
-# ⚡ 9. Trucos de competitivo
+# Trucos de competitivo
 
-### ✔️ Usar 0-index o 1-index consistente
+### Usar 0-index o 1-index consistente
 
----
-### ✔️ Convertir a grafo mentalmente
+### Convertir a grafo mentalmente
 
----
-### ✔️ Pensar en ciclos SIEMPRE
+### Pensar en ciclos SIEMPRE
 
----
-### ✔️ Si hay "repetir operación k veces" → ciclos
+### Si hay "repetir operacion k veces" → ciclos
 
----
-### ✔️ Si hay swaps → ciclos
+### Si hay swaps → ciclos
 
 ---
-# 🏋️ 10. Ejercicios recomendados (Codeforces)
+# Ejercicios recomendados (Codeforces)
 
-Buscá problemas con:
+Busca problemas con:
 - "permutation"
 - "cycles"
 - "swap"
 
-Ejemplos típicos:
+Ejemplos tipicos:
 - ordenar con swaps
-- reconstruir permutación
+- reconstruir permutacion
 - aplicar operaciones
 
 ---
-# 🚀 11. Nivel ICPC real
+# Nivel ICPC real
 
-Lo que tenés que dominar:
+Lo que tenes que dominar:
 
-✅ detectar ciclos rápido  
-✅ usar módulo en ciclos  
-✅ contar swaps  
-✅ invertir permutaciones  
-✅ componerlas  
-✅ pensar en grafos
+- detectar ciclos rapido
+- usar modulo en ciclos
+- contar swaps
+- invertir permutaciones
+- componerlas
+- pensar en grafos
+
+## Relacionado con
+- [[Subconjuntos]]

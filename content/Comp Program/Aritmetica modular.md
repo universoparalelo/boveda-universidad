@@ -1,4 +1,10 @@
-> La aritmética modular, conocida como "aritmética del reloj", es un sistema donde los números "dan la vuelta" al alcanzar un valor fijo llamado **módulo** (n), enfocándose en el residuo de la división. Dos números y son congruentes módulo n (a ≡ b mod(n)) si tienen el mismo resto al dividirse por n.
+---
+tipo: referencia
+tags: [cp, matematicas, teoria-numeros]
+categoria: matematicas
+---
+
+> La aritmetica modular, conocida como "aritmetica del reloj", es un sistema donde los numeros "dan la vuelta" al alcanzar un valor fijo llamado **modulo** (n), enfocandose en el residuo de la division. Dos numeros y son congruentes modulo n (a ≡ b mod(n)) si tienen el mismo resto al dividirse por n.
 
 ## Propiedades importantes
 - Suma
@@ -38,7 +44,11 @@ def mod_pow(a, b, m):
 ```
 a * x ≡ 1 (mod m)
 ```
-- Python ya tiene una funcion integrada 
+- Python ya tiene una funcion integrada
 ```python
 inv = pow(a, MOD-2, MOD)
 ```
+
+## Relacionado con
+- [[MCD, MCM]]
+- [[Numeros primos]]

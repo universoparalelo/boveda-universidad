@@ -1,15 +1,31 @@
-1. [[Big O]]
-2. [[Entradas y Salidas]]
-3. [[Sorting]]
-4. [[Busqueda lineal y binaria]]
-5. [[Arrays y Strings]]
-6. [[MCD, MCM]]
-7. [[Criba de Eratostenes]]
-8. [[Numeros primos]]
-9. [[Aritmetica modular]]
+---
+tags: [cp, indice]
+---
 
-## Problemas
-- [[Problemas]]
+# Programacion Competitiva
 
-## Contests
-- [[Contests]]
+## Temario
+
+| Tema | Archivo | Complejidad clave |
+|---|---|---|
+| **Analisis** | [[Big O]] | Clasificacion de complejidades |
+| **I/O** | [[Entradas y Salidas]] | Lectura/escritura rapida |
+| **Ordenamiento** | [[Sorting]] | O(n log n) |
+| **Busqueda** | [[Busqueda lineal y binaria]] | O(log n) |
+| **Estructuras** | [[Arrays y Strings]] | Listas, strings, metodos |
+| **Matematicas** | [[MCD, MCM]] | Algoritmo de Euclides |
+| | [[Criba de Eratostenes]] | O(n log n) |
+| | [[Numeros primos]] | O(raiz(n)) |
+| | [[Aritmetica modular]] | Exponenciacion, inverso |
+| **Combinatoria** | [[Permutaciones]] | Ciclos, swaps |
+| | [[Subconjuntos]] | Bitmask, 2^n |
+
+## Tecnicas
+- [[Problemas/Busqueda binaria]]
+- [[Problemas/Two pointers]]
+
+## Practica
+| Archivo | Contenido |
+|---|---|
+| [[Problemas]] | Bitacora de problemas resueltos |
+| [[Contests]] | Soluciones de contests |

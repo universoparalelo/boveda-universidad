@@ -1,13 +1,20 @@
-> La **Criba de Eratóstenes** es uno de los algoritmos más importantes de **teoría de números en programación competitiva**. Sirve para:
-> **Encontrar todos los números primos hasta N de forma eficiente.**
-	Es extremadamente común en problemas de:
-	- números primos
-	- factorización
+---
+tipo: algoritmo
+tags: [cp, matematicas, teoria-numeros]
+categoria: matematicas
+complejidad: O(n log n)
+---
+
+> La **Criba de Eratostenes** es uno de los algoritmos mas importantes de **teoria de numeros en programacion competitiva**. Sirve para:
+> **Encontrar todos los numeros primos hasta N de forma eficiente.**
+	Es extremadamente comun en problemas de:
+	- numeros primos
+	- factorizacion
 	- conteo de primos
-	- teoría de números
-- Tiene una complejidad de O(n log n)
+	- teoria de numeros
+- Tiene una complejidad de O(n log n) — [[Big O]]
 ## Numeros primos
-- Un número primo es un número que **solo tiene dos divisores**: `1 y él mismo`
+- Un numero primo es un numero que **solo tiene dos divisores**: `1 y el mismo`
 
 ## El algoritmos
 - Funciona eliminando multiplos:
@@ -20,7 +27,7 @@
 - Hacemos lo mismo hasta `raiz_cuadrada(20) ~= 4,472` y listo
 - La lista de numeros primos hasta 20 = `[2,3,5,7,11,13,17,19]`
 
-## Implementacion 
+## Implementacion
 ```
 n = 20
 
@@ -39,7 +46,7 @@ for i in range(2, n+1):
 
 
 ## SPF - Smallest Prime Factor
-- En lugar de factorizar cada número desde cero, **precalculamos para cada número su factor primo más pequeño**.
+- En lugar de factorizar cada numero desde cero, **precalculamos para cada numero su factor primo mas pequeno**.
 - Armas la criba tiene una complejidad O(n log n) y factorizar un numero O(log n)
 
 ## Implementacion
@@ -79,3 +86,8 @@ n = 84 = 2² × 3¹ × 7¹
 
 (2+1)(1+1)(1+1) = 12
 ```
+
+## Relacionado con
+- [[Numeros primos]]
+- [[Aritmetica modular]]
+- [[Big O]]
