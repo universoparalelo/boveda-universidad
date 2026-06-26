@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONTENT="$ROOT/content"
+
+GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; NC='\033[0m'
+
+clipboard() {
+    if command -v wl-copy &>/dev/null; then cat | wl-copy
+    elif command -v xclip &>/dev/null; then cat | xclip -selection clipboard
+    elif command -v clip.exe &>/dev/null; then cat | clip.exe
+    elif command -v pbcopy &>/dev/null; then cat | pbcopy
+    else return 1; fi
+}
+
+list_topics() {
+    echo -e "${YELLOW}Temas disponibles:${NC}"
+    for dir in "$CONTENT"/*/; do
+        dirname="$(basename "$dir")"
+        if [[ "$dirname" != ".obsidian" && "$dirname" != "Templates" ]]; then
+            count=$(find "$dir" -name "*.md" -not -path "*/.obsidian/*" -not -name "Untitled.md" | wc -l)
+            [[ $count -gt 0 ]] && echo "  $dirname ($count archivos)"
+        fi
+    done
+}
+
+usage() {
+    echo "Uso: $0 [-l] <tema> [tema2 ...]"
+    echo ""
+    list_topics
+    exit 1
+}
+
+LIST_ONLY=false; TOPICS=()
+for arg in "$@"; do
+    if [[ "$arg" == "-l" ]]; then LIST_ONLY=true; else TOPICS+=("$arg"); fi
+done
+
+$LIST_ONLY && { list_topics; exit 0; }
+[[ ${#TOPICS[@]} -eq 0 ]] && usage
+
+ALL_FILES=(); INCLUDE_INDEX=false
+
+for topic in "${TOPICS[@]}"; do
+    if [[ "$topic" == "index" ]]; then INCLUDE_INDEX=true; continue; fi
+    tdir="$CONTENT/$topic"
+    [[ ! -d "$tdir" ]] && { echo -e "${RED}Error: el tema '$topic' no existe${NC}" >&2; usage; }
+    files=$(find "$tdir" -name "*.md" -not -path "*/.obsidian/*" | sort || true)
+    [[ -z "$files" ]] && echo -e "${YELLOW}Advertencia: '$topic' no tiene archivos .md${NC}" >&2
+    while IFS= read -r f; do
+        [[ "$(basename "$f")" != "Untitled.md" ]] && ALL_FILES+=("$f")
+    done <<< "$files"
+done
+
+$INCLUDE_INDEX && [[ -f "$CONTENT/index.md" ]] && ALL_FILES+=("$CONTENT/index.md")
+
+[[ ${#ALL_FILES[@]} -eq 0 ]] && { echo -e "${RED}Error: no se encontraron archivos${NC}" >&2; exit 1; }
+
+TITLE="Boveda Universitaria${TOPICS[0]:+ — }${TOPICS[*]}"
+SEP="---"
+OUTPUT="Esta es mi boveda de apuntes. Responde basandote unicamente en este contenido. Si no encontras la respuesta, decilo.
+$SEP
+$TITLE
+$SEP
+
+"
+
+TOTAL_LINES=0
+for f in "${ALL_FILES[@]}"; do
+    rp="${f#$ROOT/}"
+    content=$(cat "$f")
+    lines=$(echo "$content" | wc -l)
+    TOTAL_LINES=$((TOTAL_LINES + lines))
+    OUTPUT+="## $rp
+$content
+
+"
+done
+
+echo -e "${GREEN}✓${NC} ${#ALL_FILES[@]} archivos (~${TOTAL_LINES} lineas)"
+if printf '%s' "$OUTPUT" | clipboard; then
+    echo -e "${GREEN}✓${NC} Copiado al portapapeles — pega en claude.ai y pregunta"
+else
+    printf '%s' "$OUTPUT" > /tmp/boveda_export.txt
+    echo -e "${YELLOW}⚠${NC} Sin clipboard tool. Guardado en /tmp/boveda_export.txt"
+fi
