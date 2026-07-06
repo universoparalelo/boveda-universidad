@@ -6,7 +6,7 @@ estado: en-progreso
 
 ### 3 de marzo
 Watermelon - 15 minutos - 122 ms - 3 intentos
-```
+```python
 n = int(input())
 
 if n%2 == 0 and n > 2:
