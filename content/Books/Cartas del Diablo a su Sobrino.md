@@ -223,6 +223,25 @@ Casarse o no, decision de cada uno.
 - **Cuanto mas exigimos a la vida, mas a menudo te sentiras ofendido**. Sentir que te merecias algo que te fue negado.
 - Cuando el sentimiento de propiedad nos nubla la mente y nos pone de mal humor, como cuando perdimos tiempo en el trafico o un amigo no para de hablarnos.
 
+## Carta XXII
+> El hombre se ha enamorado de una cristiana
+
+- Hay un correccional para Tentadores Incompetentes en el Infierno. (interesante)
+- Esta enojado por que es una buena cristiana, con ingenio satirico.
+- El enemigo no le importa que la gente duerma, se lave, coma, beba, haga el amor, juegue,  reze y trabaje, para que sea del otro bando debe ser retorcido.
+- Las personas alrededor de la familia de la chica se contagian de ese olor, con una simple visita quedan impregnados.
+- Ocurre una transformacion del locutor en un miriapodo, los humanos empiezan a enterarse de ello como forma de castigo del enemigo.
+- Surge del interior de la Fuerza Viril, se transforman y se sienten mas malignos(?
+
+## Carta XXIII
+> El paciente conoce mas cristianos gracias a su novia, y cristianos inteligentes.
+
+- Hay un tercer poder, la linea entre la politica y la teologia.
+- Crean nuevos Jesuses, con historias ligeramente diferentes, rasgos y demas para que sigan personas similares.
+- Crear historias verisimiles que justifiquen como sigue el cristianismo en pie y esta tan expandido.
+**solo una fe asi puede sobrevivir a la muerte de viejas culturas y al nacimiento de nuevas civilizaciones.**
+- No nos olvidemos de las guerras que portaron estas palabras, la millonada de gente que se mato en nombre de la fe.
+
 ## Pensamiento aislados
 No le ganamos al Diablo cuando lo negamos y lo evitamos, le ganamos cuando no le prestamos atencion.
 A veces llenamos de nuestra limitaciones a otras personas, porque pensamos que hacemos lo correcto. El instinto humano: sobrevivir.
